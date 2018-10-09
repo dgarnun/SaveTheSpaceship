@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "2953f1cd-1113-4a83-8deb-bf82bd285e59",
+            "Value": {
+                "id": "5a353c53-94f9-4a01-8183-6b732ed4e66a",
+                "resourcePath": "sprites\\sprite2\\sprite2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2efad6b0-64b9-48aa-8a0a-3a99112d6fc8",
             "Value": {
                 "id": "6f496501-0144-4157-b99a-5bcc4755ffbc",
@@ -68,14 +76,6 @@
                 "id": "52d1526b-7940-4ffe-986b-81754924ed09",
                 "resourcePath": "views\\46b3ab0f-8661-457a-96c6-e0a5827c72c5.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "665624fc-7007-47f5-ac47-42038a701a0b",
-            "Value": {
-                "id": "7cc5087d-dfc7-4ee8-8b96-7c005c9ce9f7",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "9014e418-77e0-4dd0-9622-8869123a94c5",
+            "Value": {
+                "id": "0b7e2fad-c43e-41c6-b1ce-4a5b90d15539",
+                "resourcePath": "tilesets\\tileset_principal\\tileset_principal.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "9294d093-f3a2-4b9e-a90e-5cd548bde324",
             "Value": {
                 "id": "c69e788a-47a6-4819-a82d-4b0acd21e84b",
@@ -135,11 +143,27 @@
             }
         },
         {
+            "Key": "9a4b190a-e79e-4a82-bfcd-2fa30fc62c87",
+            "Value": {
+                "id": "78251479-f38c-4d0c-a484-ca484e630ee6",
+                "resourcePath": "sprites\\robot_1_idle_anim\\robot_1_idle_anim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "803dee30-00aa-4385-9b61-f67d0484bf54",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a932d81f-8cd5-4106-ada1-97e48021428f",
+            "Value": {
+                "id": "6ef0b1d3-65b7-44d1-9e22-e5fa90d8bb3d",
+                "resourcePath": "sprites\\robot1_walk_anim\\robot1_walk_anim.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -188,6 +212,14 @@
                 "id": "7e1bdab5-7971-4c6b-a48d-ae8ac4339b8d",
                 "resourcePath": "views\\c9270a10-b953-4451-835b-6f7fc6197b4e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c95d1b05-eaf1-4830-87a2-5f1f9b97e2be",
+            "Value": {
+                "id": "cf8627ab-8c20-4405-9abe-ab4e475e636a",
+                "resourcePath": "objects\\robot1\\robot1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
