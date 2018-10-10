@@ -5,3 +5,4 @@ var current_x = camera_get_view_x(camera_get_active());
 var current_y = camera_get_view_y(camera_get_active());
 
 draw_text(current_x+20,current_y+20, "Mouse x: " + string(mouse_x));
+draw_text(current_x+20,current_y+40, "Object x: " + string(x));

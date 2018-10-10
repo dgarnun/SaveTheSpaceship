@@ -2,3 +2,15 @@ Background 1 - https://pixabay.com/es/v%C3%ADa-l%C3%A1ctea-cielo-estrellado-2695
 Background 2 - https://wallpapercave.com/w/2wuJNqK
 
 Robot Tileset - https://0x72.itch.io/16x16-robot-tileset
+Space Tileset - https://gamebanana.com/textures/download/4678
+
+GM2 Tutorials:
+
+Mouse Dragging View (10/10/18)
+https://www.youtube.com/watch?time_continue=38&v=R4hjsP6poqA
+
+Game Maker Studio 2: Tiles and Tilesets (10/10/18)
+https://www.youtube.com/watch?v=hWxzZjVq-0w
+
+GameMaker Studio 2: Complete Platformer Tutorial (Part 6: Cameras & Tiles)
+https://www.youtube.com/watch?v=YbppozAV1Q8&list=PLPRT_JORnIupqWsjRpJZjG07N01Wsw_GJ&index=6
