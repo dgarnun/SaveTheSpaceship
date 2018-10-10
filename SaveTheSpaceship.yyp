@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "116f3b1f-a765-42a6-93dd-0c8e73252810",
+            "Value": {
+                "id": "26b61f7a-ec13-46e8-b83f-f286d96ad154",
+                "resourcePath": "objects\\Camera\\Camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e211c29-c7db-4485-a985-8072b6ad73a9",
             "Value": {
                 "id": "aefeff19-3022-4b74-9480-5b2089cd25b5",
@@ -71,11 +79,27 @@
             }
         },
         {
+            "Key": "462c1edd-8fb3-47b3-9ec7-9b680749eb6c",
+            "Value": {
+                "id": "8b35a741-a375-4994-9d11-d042eef49578",
+                "resourcePath": "sprites\\sprite5\\sprite5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46b3ab0f-8661-457a-96c6-e0a5827c72c5",
             "Value": {
                 "id": "52d1526b-7940-4ffe-986b-81754924ed09",
                 "resourcePath": "views\\46b3ab0f-8661-457a-96c6-e0a5827c72c5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "46bca62f-8928-46ca-a727-5c5f43c833d6",
+            "Value": {
+                "id": "4ab0bfa8-9dda-4736-ac05-dc24665b0f88",
+                "resourcePath": "sprites\\cursor_crosshair\\cursor_crosshair.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -148,6 +172,14 @@
                 "id": "78251479-f38c-4d0c-a484-ca484e630ee6",
                 "resourcePath": "sprites\\robot_1_idle_anim\\robot_1_idle_anim.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a05f15c5-e9e6-495e-9ab1-52b8ff4fe3d9",
+            "Value": {
+                "id": "310ea0c1-a81d-4e5a-8ed5-377108222acc",
+                "resourcePath": "tilesets\\tileset1\\tileset1.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
