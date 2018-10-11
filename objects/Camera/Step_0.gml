@@ -7,8 +7,8 @@ yTo = mouse_y;
 
 // Object position (center of the camera) is 1/4 difference between 'camera' and mouse
 // The lesser the difference the softer is the scrolling updated
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+x += (xTo - x) / 15;
+y += (yTo - y) / 15;
 
 // x and y value cannot be less than view_?_half or more than  
 x = clamp(x, view_w_half, room_width - view_w_half);

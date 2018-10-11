@@ -14,3 +14,6 @@ https://www.youtube.com/watch?v=hWxzZjVq-0w
 
 GameMaker Studio 2: Complete Platformer Tutorial (Part 6: Cameras & Tiles)
 https://www.youtube.com/watch?v=YbppozAV1Q8&list=PLPRT_JORnIupqWsjRpJZjG07N01Wsw_GJ&index=6
+
+10 Rules for GM2
+https://www.youtube.com/watch?v=G1WxKEk6Wrw

@@ -95,10 +95,10 @@
             }
         },
         {
-            "Key": "46bca62f-8928-46ca-a727-5c5f43c833d6",
+            "Key": "49bffe39-2d22-4157-961a-7096088a28c0",
             "Value": {
-                "id": "4ab0bfa8-9dda-4736-ac05-dc24665b0f88",
-                "resourcePath": "sprites\\cursor_crosshair\\cursor_crosshair.yy",
+                "id": "2b3e06c8-1de6-4260-a521-a5f299739f2a",
+                "resourcePath": "sprites\\robot1_walk\\robot1_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -167,14 +167,6 @@
             }
         },
         {
-            "Key": "9a4b190a-e79e-4a82-bfcd-2fa30fc62c87",
-            "Value": {
-                "id": "78251479-f38c-4d0c-a484-ca484e630ee6",
-                "resourcePath": "sprites\\robot_1_idle_anim\\robot_1_idle_anim.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a05f15c5-e9e6-495e-9ab1-52b8ff4fe3d9",
             "Value": {
                 "id": "310ea0c1-a81d-4e5a-8ed5-377108222acc",
@@ -188,14 +180,6 @@
                 "id": "803dee30-00aa-4385-9b61-f67d0484bf54",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
-            }
-        },
-        {
-            "Key": "a932d81f-8cd5-4106-ada1-97e48021428f",
-            "Value": {
-                "id": "6ef0b1d3-65b7-44d1-9e22-e5fa90d8bb3d",
-                "resourcePath": "sprites\\robot1_walk_anim\\robot1_walk_anim.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -260,6 +244,14 @@
                 "id": "c6f2ed3f-191d-441b-b0c8-7119ee5256e3",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d7e0a9f4-cd19-451a-a2e7-8ce9e6d84d66",
+            "Value": {
+                "id": "eb15c292-23e3-460e-a98a-2732efc52caf",
+                "resourcePath": "sprites\\robot1_idle\\robot1_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
