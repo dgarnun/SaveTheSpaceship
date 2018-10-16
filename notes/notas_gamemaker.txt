@@ -1,0 +1,5 @@
+- Podemos heredar de objetos, pero si queremos sobrescribir eventos heredados (y de ahí, propiedades heredadas)
+debemos llamar antes de todo a event_inherited(); para que también se ejecute el script del padre.
+- Para hacer referencia con 'with': 
+		- 'other' hace referencia a una instancia en exclusiva (p.e. la que hemos colisionado)
+		- '<obj_name>' hace referencia a TODAS las instancias de ese tipo

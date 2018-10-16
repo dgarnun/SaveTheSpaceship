@@ -13,4 +13,4 @@ var grid_starting_y = 190;
 var max_horizontal_tiles = 32;
 var max_vertical_tiles = 16;
 global.grid = mp_grid_create(grid_starting_x, grid_starting_y, max_horizontal_tiles, max_vertical_tiles, cell_size, cell_size);
-mp_grid_add_instances(global.grid, obj_wall, true);
+mp_grid_add_instances(global.grid, obj_parent_wall, true);
