@@ -6,6 +6,9 @@ camera_speed = 10;
 view_w_half = camera_get_view_width(cam) * 0.5;
 view_h_half = camera_get_view_height(cam) * 0.5;
 
+// Boolean variable to dis|enable ingame fullscreen
+is_full = false;
+
 // Create the navigation grid
 var cell_size = 64;
 //var grid_starting_x = 190;
@@ -28,7 +31,6 @@ var walls_tilemap = layer_tilemap_get_id(layer_get_id("Walls"));
 for (var i = 0; i < _w; i++) {
 	for (var j = 0; j < _h; j++) {
 		if (tilemap_get(walls_tilemap, i, j)) {
-			show_message("asd");
 			mp_grid_add_cell(global.grid, i, j);
 		}
 	}
