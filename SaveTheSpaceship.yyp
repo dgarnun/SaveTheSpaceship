@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "452d87ca-abf1-492e-8d49-c475356ab62c",
+            "Value": {
+                "id": "226f9251-e6ef-4e0d-8090-6df77a45d45d",
+                "resourcePath": "sprites\\hal_idle\\hal_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4616b668-44f3-4fc5-8821-17a252775004",
             "Value": {
                 "id": "6392a7b4-611d-4112-ac80-ff8772dc154d",
@@ -154,7 +162,7 @@
             "Key": "49bffe39-2d22-4157-961a-7096088a28c0",
             "Value": {
                 "id": "2b3e06c8-1de6-4260-a521-a5f299739f2a",
-                "resourcePath": "sprites\\robot1_walk\\robot1_walk.yy",
+                "resourcePath": "sprites\\marvin_walking\\marvin_walking.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -164,6 +172,14 @@
                 "id": "a29b1d83-f9bd-40a9-8616-ba50ec4184c4",
                 "resourcePath": "objects\\obj_external_wall_down\\obj_external_wall_down.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51fa883d-31b7-4aef-bdbc-e4082649cc67",
+            "Value": {
+                "id": "50a39ce7-bcb3-4ddd-b6c4-e7a01f939958",
+                "resourcePath": "views\\51fa883d-31b7-4aef-bdbc-e4082649cc67.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -252,6 +268,14 @@
                 "id": "310ea0c1-a81d-4e5a-8ed5-377108222acc",
                 "resourcePath": "tilesets\\tileset1\\tileset1.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "a298f2c7-83b7-43d1-84ca-f1dbf96d0a2c",
+            "Value": {
+                "id": "0b729d88-2ec1-4048-b252-c2425caf1db0",
+                "resourcePath": "objects\\obj_robot_hal\\obj_robot_hal.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -362,7 +386,7 @@
             "Key": "d7e0a9f4-cd19-451a-a2e7-8ce9e6d84d66",
             "Value": {
                 "id": "eb15c292-23e3-460e-a98a-2732efc52caf",
-                "resourcePath": "sprites\\robot1_idle\\robot1_idle.yy",
+                "resourcePath": "sprites\\marvin_idle\\marvin_idle.yy",
                 "resourceType": "GMSprite"
             }
         },

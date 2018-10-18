@@ -1,4 +1,4 @@
-// Keyboard check
+// Keyboard check for camera movement
 if (keyboard_check(ord("W"))) {
 	y -= camera_speed;
 }
@@ -12,10 +12,29 @@ if (keyboard_check(ord("D"))) {
 	x += camera_speed;
 }
 
+// Fullscreen
 if (keyboard_check(vk_f1)) {
-	is_full = !is_full;
-	window_set_fullscreen(is_full);
+	if window_get_fullscreen() {
+		window_set_fullscreen(false);
+	}
+	else {
+		window_set_fullscreen(true);
+	}
 } 
+
+// Set camera on robots
+// 1 -> Marvin
+if keyboard_check(ord("1")) {
+	global.selected_robot = global.marvin;
+	x = global.marvin.x;
+	y = global.marvin.y;
+}
+// 2 -> Hal
+if keyboard_check(ord("2")) {
+	global.selected_robot = global.hal;
+	x = global.hal.x;
+	y = global.hal.y;
+}
 
 // x and y value cannot be less than view_?_half or more than  
 x = clamp(x, view_w_half, room_width - view_w_half);
@@ -24,6 +43,7 @@ y = clamp(y, view_h_half, room_height - view_h_half);
 // Set position and move the cam
 camera_set_view_pos(cam, x - view_w_half , y - view_h_half);
 
+// If have a robot selected and we click on a tile, then the robot has a target
 if (mouse_check_button(mb_left)) {
 	if (global.selected_robot) {
 		var instance = global.selected_robot;
