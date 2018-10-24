@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "0e510dad-2c9d-4da2-b712-8b210ac82088",
-            "Value": {
-                "id": "d14f0073-96f8-40e9-b786-023b2d2f488e",
-                "resourcePath": "sprites\\img_ext_wall_right\\img_ext_wall_right.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "116f3b1f-a765-42a6-93dd-0c8e73252810",
             "Value": {
                 "id": "26b61f7a-ec13-46e8-b83f-f286d96ad154",
@@ -135,14 +127,6 @@
             }
         },
         {
-            "Key": "4616b668-44f3-4fc5-8821-17a252775004",
-            "Value": {
-                "id": "6392a7b4-611d-4112-ac80-ff8772dc154d",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "462c1edd-8fb3-47b3-9ec7-9b680749eb6c",
             "Value": {
                 "id": "8b35a741-a375-4994-9d11-d042eef49578",
@@ -156,14 +140,6 @@
                 "id": "52d1526b-7940-4ffe-986b-81754924ed09",
                 "resourcePath": "views\\46b3ab0f-8661-457a-96c6-e0a5827c72c5.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "49bffe39-2d22-4157-961a-7096088a28c0",
-            "Value": {
-                "id": "2b3e06c8-1de6-4260-a521-a5f299739f2a",
-                "resourcePath": "sprites\\marvin_walking\\marvin_walking.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -203,14 +179,6 @@
             "Value": {
                 "id": "f0ebe0d5-d562-4e00-8b03-8dcfcc8be1fe",
                 "resourcePath": "sprites\\spaceship_walls_tileset\\spaceship_walls_tileset.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7a62eb6c-ede9-4294-b7ea-b84b04bbcee0",
-            "Value": {
-                "id": "0b07f185-6ee2-490a-9134-7152390fe3d8",
-                "resourcePath": "sprites\\img_ext_wall_down\\img_ext_wall_down.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -295,14 +263,6 @@
             }
         },
         {
-            "Key": "af868a3e-0e42-4868-9306-a101b81328d7",
-            "Value": {
-                "id": "b1a4eb7d-7a6c-4e4b-a818-638d78ac572c",
-                "resourcePath": "sprites\\img_ext_wall_left\\img_ext_wall_left.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b325a9b2-6a35-499a-b855-8147df0793b6",
             "Value": {
                 "id": "86c3e346-a29c-4185-aa67-9d07c301df48",
@@ -324,22 +284,6 @@
                 "id": "41e3f86a-4138-4069-a108-8fc181ddd014",
                 "resourcePath": "notes\\notas_aspectos_juego.yy",
                 "resourceType": "GMNotes"
-            }
-        },
-        {
-            "Key": "b96c1c74-a426-41f1-ad0f-7e499a1b4d10",
-            "Value": {
-                "id": "3d8ece2c-382c-403f-8263-3db78cd3c699",
-                "resourcePath": "sprites\\room_closed_door\\room_closed_door.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ba79ca35-bb93-4faf-864a-d02e52eabf3b",
-            "Value": {
-                "id": "bc2bdd96-5e74-49d7-9d6c-a3d6a7c0edeb",
-                "resourcePath": "sprites\\room_opening_door\\room_opening_door.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -396,14 +340,6 @@
                 "id": "dc0f3d1c-7261-4386-9dbb-0cba9d468c61",
                 "resourcePath": "objects\\object2\\object2.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ddeff4fa-09ce-4c09-94fe-08072e74f857",
-            "Value": {
-                "id": "b33189ad-e18a-4653-820e-448436b895cf",
-                "resourcePath": "sprites\\img_ext_wall_up\\img_ext_wall_up.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

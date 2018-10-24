@@ -19,10 +19,10 @@ var max_vertical_tiles = room_height / cell_size;
 
 global.grid = mp_grid_create(grid_starting_x, grid_starting_y, max_horizontal_tiles, max_vertical_tiles, cell_size, cell_size);
 
-// for loops
+// Add walls to avoid when making paths
 var _w = max_horizontal_tiles;
 var _h = max_vertical_tiles;
-var walls_tilemap = layer_tilemap_get_id(layer_get_id("Walls"));
+var walls_tilemap = layer_tilemap_get_id(layer_get_id("walls"));
 
 for (var i = 0; i < _w; i++) {
 	for (var j = 0; j < _h; j++) {
