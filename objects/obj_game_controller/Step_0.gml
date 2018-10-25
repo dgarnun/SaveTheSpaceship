@@ -13,7 +13,7 @@ if (keyboard_check(ord("D"))) {
 }
 
 // Fullscreen
-if (keyboard_check(vk_f1)) {
+if (keyboard_check(vk_f4)) {
 	if window_get_fullscreen() {
 		window_set_fullscreen(false);
 	}
