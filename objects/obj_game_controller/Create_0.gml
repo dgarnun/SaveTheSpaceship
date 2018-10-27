@@ -1,3 +1,6 @@
+// Randomize. Useful to call at start to reset random seed
+randomize();
+
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
@@ -15,5 +18,6 @@ var cell_size = 64;
 var max_horizontal_tiles = room_width / cell_size;
 var max_vertical_tiles = room_height / cell_size;
 
-
+// Pause
+pause = false;
 

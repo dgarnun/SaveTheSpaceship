@@ -1,3 +1,14 @@
+// Pause
+if (keyboard_check(ord("P"))) {
+	if (!pause) {
+		pause = true;
+		instance_deactivate_all(true);
+	} else {
+		pause = false;
+		instance_activate_all();
+	}
+}
+
 // Keyboard check for camera movement
 if (keyboard_check(ord("W"))) {
 	y -= camera_speed;
