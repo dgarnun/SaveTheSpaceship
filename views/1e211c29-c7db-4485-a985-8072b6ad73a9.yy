@@ -7,7 +7,6 @@
         "9014e418-77e0-4dd0-9622-8869123a94c5",
         "a05f15c5-e9e6-495e-9ab1-52b8ff4fe3d9",
         "3db03032-0018-46b1-a711-8dee84322d6d",
-        "6ecc44dc-f2d0-48d1-8547-2f0659cb532e",
         "329d3a51-b576-4618-aae0-dff1a60dbea5"
     ],
     "filterType": "GMTileSet",
