@@ -1,6 +1,9 @@
 // Randomize. Useful to call at start to reset random seed
 randomize();
 
+// Set game font for the GUI
+draw_set_font(fnt_GUI);
+
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
