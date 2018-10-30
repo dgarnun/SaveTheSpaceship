@@ -7,8 +7,8 @@ draw_set_font(fnt_GUI);
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
-global.marvin = instance_create_layer(1250, 700, global.robot_instances_layer, obj_robot_marvin);
-global.hal = instance_create_layer(1250, 770, global.robot_instances_layer, obj_robot_hal);
+global.marvin = instance_create_layer(1150, 700, global.robot_instances_layer, obj_robot_marvin);
+global.hal = instance_create_layer(1150, 770, global.robot_instances_layer, obj_robot_hal);
 
 cam = view_camera[0];
 camera_speed = 10;

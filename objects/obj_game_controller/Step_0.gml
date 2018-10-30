@@ -37,12 +37,14 @@ if (keyboard_check(vk_f4)) {
 // 1 -> Marvin
 if keyboard_check(ord("1")) {
 	global.selected_robot = global.marvin;
+	global.marvin.is_selected = true;
 	x = global.marvin.x;
 	y = global.marvin.y;
 }
 // 2 -> Hal
 if keyboard_check(ord("2")) {
 	global.selected_robot = global.hal;
+	global.hal.is_selected = true;
 	x = global.hal.x;
 	y = global.hal.y;
 }
