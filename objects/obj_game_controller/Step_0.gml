@@ -9,6 +9,9 @@ if (keyboard_check(ord("P"))) {
 	}
 }
 
+if !window_has_focus()
+	pause = true;
+
 // Keyboard check for camera movement
 if (keyboard_check(ord("W"))) {
 	y -= camera_speed;
@@ -47,6 +50,20 @@ if keyboard_check(ord("2")) {
 	global.hal.is_selected = true;
 	x = global.hal.x;
 	y = global.hal.y;
+}
+// 3 -> Arnold
+if keyboard_check(ord("3")) {
+	global.selected_robot = global.arnold;
+	global.arnold.is_selected = true;
+	x = global.arnold.x;
+	y = global.arnold.y;
+}
+// 4 -> Data
+if keyboard_check(ord("4")) {
+	global.selected_robot = global.data;
+	global.data.is_selected = true;
+	x = global.data.x;
+	y = global.data.y;
 }
 
 // x and y value cannot be less than view_?_half or more than  

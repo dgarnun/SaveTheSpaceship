@@ -9,6 +9,8 @@ global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
 global.marvin = instance_create_layer(1150, 700, global.robot_instances_layer, obj_robot_marvin);
 global.hal = instance_create_layer(1150, 770, global.robot_instances_layer, obj_robot_hal);
+global.arnold = instance_create_layer(1150, 810, global.robot_instances_layer, obj_robot_arnold);
+global.data = instance_create_layer(1150, 880, global.robot_instances_layer, obj_robot_data);
 
 cam = view_camera[0];
 camera_speed = 10;

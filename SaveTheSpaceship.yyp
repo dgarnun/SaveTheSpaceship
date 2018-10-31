@@ -127,6 +127,22 @@
             }
         },
         {
+            "Key": "3e77ba3e-67b2-4111-a1df-148613f39dd9",
+            "Value": {
+                "id": "242ffb72-7b4e-4fdc-b4cb-e5f3cb8e25e0",
+                "resourcePath": "sprites\\arnold_idle\\arnold_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3eb5cbf1-ed1b-4172-b973-c5c3b899cb58",
+            "Value": {
+                "id": "69c34c37-fd31-4d47-923a-a4eecee7005e",
+                "resourcePath": "sprites\\data_idle\\data_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44090873-0b19-4653-a0ec-aeac265beb95",
             "Value": {
                 "id": "27616f39-7145-4a28-b4dc-01499274c047",
@@ -140,6 +156,14 @@
                 "id": "226f9251-e6ef-4e0d-8090-6df77a45d45d",
                 "resourcePath": "sprites\\hal_idle\\hal_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "460eb26c-f86d-45da-bdd5-c0454693e2d7",
+            "Value": {
+                "id": "08d9ae05-068f-493a-9e8f-73d710269103",
+                "resourcePath": "objects\\obj_robot_arnold\\obj_robot_arnold.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -367,6 +391,14 @@
             }
         },
         {
+            "Key": "cb342c29-11e2-4369-861f-8204d245af76",
+            "Value": {
+                "id": "7e014791-e4c9-48a7-8552-29e181c6f78d",
+                "resourcePath": "views\\cb342c29-11e2-4369-861f-8204d245af76.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "c6f2ed3f-191d-441b-b0c8-7119ee5256e3",
@@ -380,6 +412,14 @@
                 "id": "eb15c292-23e3-460e-a98a-2732efc52caf",
                 "resourcePath": "sprites\\marvin_idle\\marvin_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df16a9db-504b-4913-af2f-43be7757887c",
+            "Value": {
+                "id": "9e494e9c-e039-460a-badd-da57987fd6d4",
+                "resourcePath": "objects\\obj_robot_data\\obj_robot_data.yy",
+                "resourceType": "GMObject"
             }
         },
         {

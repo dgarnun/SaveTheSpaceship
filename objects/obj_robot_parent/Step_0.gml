@@ -7,3 +7,10 @@ if (has_target) {
 // If we are not the selected robot...
 if global.selected_robot != id
 	is_selected = false;
+	
+// Draw energy if robot is moving
+if has_target && (x != x_target || y != y_target)
+	robot_battery -= robot_consumption;
+
+if robot_battery <= 0
+	robot_battery = 0;
