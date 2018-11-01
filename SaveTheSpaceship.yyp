@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "70de7f92-68d2-46ce-bd93-cbf6596ff74e",
+            "Value": {
+                "id": "9c5719ff-ec82-46c2-b1ed-a33575c3c0dc",
+                "resourcePath": "objects\\obj_game_menu\\obj_game_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7ecac127-96f9-4c36-baf1-c43b25ddf3a7",
             "Value": {
                 "id": "a3bf802f-726b-4d3d-bb1b-9fbf384f9f08",
@@ -316,6 +324,14 @@
                 "id": "3fbe4352-3792-4df3-8857-36b2bc33b3e6",
                 "resourcePath": "views\\acefa620-9b0f-4b20-ac4c-41a24ac75672.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "af6fa2f4-dac6-4044-83a5-fac0f7b0b490",
+            "Value": {
+                "id": "3b7f8340-c895-4190-bd90-d74e4156b781",
+                "resourcePath": "scripts\\pause_in_game\\pause_in_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -426,7 +442,7 @@
             "Key": "e3d704b8-8a4c-4ac3-b2fc-5a688d131916",
             "Value": {
                 "id": "ecd65a99-063e-4ac3-8f5b-04b86b129c61",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\main_game_room\\main_game_room.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -465,7 +481,8 @@
     ],
     "script_order": [
         "b2634b0e-9913-48cf-ac92-73009c5a0b7b",
-        "7f76a252-6e86-4bff-9bf5-4a1748effaad"
+        "7f76a252-6e86-4bff-9bf5-4a1748effaad",
+        "af6fa2f4-dac6-4044-83a5-fac0f7b0b490"
     ],
     "tutorial": ""
 }

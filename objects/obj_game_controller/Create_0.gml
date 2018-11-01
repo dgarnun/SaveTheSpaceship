@@ -1,9 +1,3 @@
-// Randomize. Useful to call at start to reset random seed
-randomize();
-
-// Set game font for the GUI
-draw_set_font(fnt_GUI);
-
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
@@ -23,6 +17,8 @@ var cell_size = 64;
 var max_horizontal_tiles = room_width / cell_size;
 var max_vertical_tiles = room_height / cell_size;
 
-// Pause
-pause = false;
-
+layer_set_visible(layer_get_id("floor"), false);
+layer_set_visible(layer_get_id("inner_walls"), false);
+layer_set_visible(layer_get_id("instance_walls"), false);
+layer_set_visible(layer_get_id("walls"), false);
+layer_set_visible(layer_get_id("robots"), false);
