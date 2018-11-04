@@ -53,8 +53,13 @@ camera_set_view_pos(cam, x - view_w_half , y - view_h_half);
 if (mouse_check_button(mb_left)) {
 	if (global.selected_robot) {
 		var instance = global.selected_robot;
-		(instance).x_target = mouse_x;
-		(instance).y_target = mouse_y;
-		(instance).has_target = true;
+		with ((instance)) {
+			x_target = mouse_x;
+			y_target = mouse_y;
+			has_target = true;
+			if mp_grid_path(global.grid, path, x, y, x_target, y_target, false) {
+				path_start(path, robot_speed, path_action_stop, 0);
+			}
+		}	
 	}	
 }

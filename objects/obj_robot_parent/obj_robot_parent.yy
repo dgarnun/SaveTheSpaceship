@@ -5,16 +5,6 @@
     "name": "obj_robot_parent",
     "eventList": [
         {
-            "id": "31762ba9-d5da-4668-9a0c-0c8ab80053b8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
-            "m_owner": "e9a18b53-772e-407e-9230-af22760ad6b1"
-        },
-        {
             "id": "082cd969-78e2-4b9b-b1ca-c5e621a85a4f",
             "modelName": "GMEvent",
             "mvc": "1.0",
