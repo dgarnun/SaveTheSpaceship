@@ -7,11 +7,9 @@ draw_set_font(fnt_GUI);
 pause = true;
 game_init = false;
 
-
 // If our windows hasn't got focus then pause
 if !window_has_focus()
 	pause = true;
-
 
 menu_x = 64;
 menu_y = 660;

@@ -13,16 +13,6 @@ if (keyboard_check(ord("D"))) {
 	x += camera_speed;
 }
 
-// Fullscreen
-if (keyboard_check(vk_f4)) {
-	if window_get_fullscreen() {
-		window_set_fullscreen(false);
-	}
-	else {
-		window_set_fullscreen(true);
-	}
-} 
-
 // Set camera on robots
 // 1 -> Marvin
 if keyboard_check(ord("1")) {
