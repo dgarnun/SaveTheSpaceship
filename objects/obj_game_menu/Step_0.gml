@@ -1,4 +1,5 @@
-if game_init button[0] = "Continuar";
+if game_init 
+	button[0] = "Continuar";
 
 if pause {
 	menu_move = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));

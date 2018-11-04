@@ -19,5 +19,6 @@ robot_charging_speed = 5;
 // Integrity
 robot_integrity = 100;
 
-// Path is necessary for each robot route when it is selected and has a target
+// A path for every robot
 path = path_add();
+

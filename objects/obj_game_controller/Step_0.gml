@@ -1,4 +1,3 @@
-
 // Keyboard check for camera movement
 if (keyboard_check(ord("W"))) {
 	y -= camera_speed;
