@@ -5,7 +5,7 @@ randomize();
 draw_set_font(fnt_GUI);
 
 pause = true;
-global.game_init = false;
+game_init = false;
 
 
 // If our windows hasn't got focus then pause
