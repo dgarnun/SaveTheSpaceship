@@ -1,16 +1,3 @@
-// Pause
-if (keyboard_check(vk_escape)) {
-	layer_set_visible(layer_get_id("floor"), false);
-	layer_set_visible(layer_get_id("inner_walls"), false);
-	layer_set_visible(layer_get_id("instance_walls"), false);
-	layer_set_visible(layer_get_id("walls"), false);
-	layer_set_visible(layer_get_id("robots"), false);
-	global.pause = true;
-}
-
-// If our windows hasn't got focus then pause
-if !window_has_focus()
-	global.pause = true;
 
 // Keyboard check for camera movement
 if (keyboard_check(ord("W"))) {

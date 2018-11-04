@@ -1,7 +1,7 @@
-if global.pause {
+if pause {
 	switch (menu_index) {
 		case 0:
-			global.pause = false;
+			pause = false;
 			global.game_init = true;
 			layer_set_visible(layer_get_id("floor"), true);
 			layer_set_visible(layer_get_id("inner_walls"), true);
@@ -11,7 +11,7 @@ if global.pause {
 			instance_activate_all();
 			break;
 		case 1:
-			//TODO: Instructions
+			instructions = true;
 			break;
 		case 2:
 			game_end();

@@ -4,8 +4,14 @@ randomize();
 // Set game font for the GUI
 draw_set_font(fnt_GUI);
 
-global.pause = true;
+pause = true;
 global.game_init = false;
+
+
+// If our windows hasn't got focus then pause
+if !window_has_focus()
+	pause = true;
+
 
 menu_x = 64;
 menu_y = 660;
@@ -18,3 +24,6 @@ buttons = array_length_1d(button);
 
 menu_index = 0;
 last_selected = 0;
+
+cam = view_camera[0];
+instructions = false;
