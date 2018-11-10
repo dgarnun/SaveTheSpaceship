@@ -3,11 +3,10 @@ if pause {
 		case 0:
 			pause = false;
 			game_init = true;
-			layer_set_visible(layer_get_id("floor"), true);
-			layer_set_visible(layer_get_id("inner_walls"), true);
-			layer_set_visible(layer_get_id("instance_walls"), true);
-			layer_set_visible(layer_get_id("robots"), true);
-			layer_set_visible(layer_get_id("walls"), true);
+			var index = 0;
+			repeat(ds_list_size(global.layers) ) {
+				layer_set_visible(layer_get_id(global.layers[| index++]), true);
+			}
 			instance_activate_all();
 			break;
 		case 1:

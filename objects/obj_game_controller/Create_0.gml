@@ -13,11 +13,10 @@ view_w_half = camera_get_view_width(cam) * 0.5;
 view_h_half = camera_get_view_height(cam) * 0.5;
 
 // Turn off layer when in initial game menu
-layer_set_visible(layer_get_id("floor"), false);
-layer_set_visible(layer_get_id("inner_walls"), false);
-layer_set_visible(layer_get_id("instance_walls"), false);
-layer_set_visible(layer_get_id("walls"), false);
-layer_set_visible(layer_get_id("robots"), false);
+var index = 0;
+repeat(ds_list_size(global.layers) ) {
+	layer_set_visible(layer_get_id(global.layers[| index++]), false);
+}
 
 // Path navigation
 var cell_size = 64;

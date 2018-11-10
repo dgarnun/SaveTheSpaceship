@@ -13,11 +13,10 @@ if pause {
 
 // Pause
 if (keyboard_check(vk_escape)) {
-	layer_set_visible(layer_get_id("floor"), false);
-	layer_set_visible(layer_get_id("inner_walls"), false);
-	layer_set_visible(layer_get_id("instance_walls"), false);
-	layer_set_visible(layer_get_id("walls"), false);
-	layer_set_visible(layer_get_id("robots"), false);
+	var index = 0;
+	repeat(ds_list_size(global.layers) ) {
+		layer_set_visible(layer_get_id(global.layers[| index++]), false);
+	}
 	pause = true;
 	instructions = false;
 }
