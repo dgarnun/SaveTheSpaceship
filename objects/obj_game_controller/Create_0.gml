@@ -24,3 +24,4 @@ var max_horizontal_tiles = room_width / cell_size;
 var max_vertical_tiles = room_height / cell_size;
 global.grid = mp_grid_create(0, 0, max_horizontal_tiles, max_vertical_tiles, cell_size, cell_size);
 mp_grid_add_instances(global.grid, external_walls, true);
+mp_grid_add_instances(global.grid, obj_walls_parent, true);

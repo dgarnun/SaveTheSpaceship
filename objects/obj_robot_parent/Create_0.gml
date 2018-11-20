@@ -14,7 +14,7 @@ robot_speed = 1;
 // Batteries
 robot_battery = 100;
 robot_consumption = 1;
-robot_charging_speed = 5;
+robot_charging_speed = 0.05;
 
 // Integrity
 robot_integrity = 100;
