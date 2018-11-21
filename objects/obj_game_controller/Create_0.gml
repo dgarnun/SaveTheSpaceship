@@ -9,8 +9,17 @@ global.data = instance_create_layer(1000, 780, global.robot_instances_layer, obj
 cam = view_camera[0];
 camera_speed = 10;
 
-view_w_half = camera_get_view_width(cam) * 0.5;
-view_h_half = camera_get_view_height(cam) * 0.5;
+// Save original view values
+view_w = camera_get_view_width(cam);
+view_h = camera_get_view_height(cam);
+// Set initial camera size
+view_wview = view_w;
+view_hview = view_h;
+// Values at half
+view_w_half = camera_get_view_width(cam) / 2;
+view_h_half = camera_get_view_height(cam) / 2;
+// Initiate zoom factor
+zoom_factor = 1;
 
 // Turn off layer when in initial game menu
 var index = 0;
