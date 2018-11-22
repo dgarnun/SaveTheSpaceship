@@ -27,16 +27,26 @@ if pause {
 		}	
 	} else {
 		// Print instructions
+		var vertical_offset = 30;
 		draw_set_color(c_ltgray);
-		draw_text(20, 30, "Camera: W - Up; S - Down; A - Left; D - Right");
-		draw_text(20, 60, "\"1\" select Marvin");
-		draw_text(20, 90, "\"2\" select HAL");
-		draw_text(20, 120, "\"3\" select Arnold");
-		draw_text(20, 150, "\"4\" select Data");
-		draw_text(20, 180, "use mouse to point and click");
-		draw_text(20, 210, "BAT stands for batteries level");
-		draw_text(20, 240, "INT stands for robot integrity");
-		draw_text(20, 270, "press ESC in game for pause");
-		draw_text(20, 720, "Press ESC to get back...");
+		draw_text(20, vertical_offset, "Camera: W - Up; S - Down; A - Left; D - Right; Z - Zoom");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "\"1\" select Marvin");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "\"2\" select HAL");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "\"3\" select Arnold");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "\"4\" select Data");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "use mouse to point and click");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "BAT stands for batteries level");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "INT stands for robot integrity");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "press ESC in game for pause");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "Press ESC to get back...");
 	}
 }
