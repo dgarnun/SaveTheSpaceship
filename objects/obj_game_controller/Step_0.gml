@@ -65,7 +65,7 @@ view_wview = clamp(view_wview, view_w, 2560);
 view_hview = clamp(view_hview, view_h, 1600);
 camera_set_view_size(cam, view_wview, view_hview);
 
-// If have a robot selected and we click on a tile, then the robot has a target
+// Send a target to the selected robot
 if (mouse_check_button(mb_left)) {
 	if (global.selected_robot) {
 		var instance = global.selected_robot;
