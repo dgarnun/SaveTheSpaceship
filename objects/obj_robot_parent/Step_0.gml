@@ -16,3 +16,8 @@ robot_battery = clamp(robot_battery, 0, 100);
 if place_meeting(x, y, obj_charge_area) {
 	robot_battery += robot_charging_speed;
 }
+
+if robot_battery == 0 {
+	if path_exists(path) path_end();
+	robot_speed = 0;
+}

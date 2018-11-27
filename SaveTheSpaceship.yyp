@@ -34,7 +34,7 @@
             "Key": "001bc26f-cff5-4176-be9a-4be1f57fb197",
             "Value": {
                 "id": "5bf44bb3-ba9e-4cab-a274-85148fdb888c",
-                "resourcePath": "objects\\obj_walls3\\obj_walls3.yy",
+                "resourcePath": "objects\\obj_walls_3\\obj_walls_3.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "40ed4075-2f6d-47ae-999a-22b4180ab7ab",
+            "Value": {
+                "id": "abe110d3-2b45-4f7f-91b2-35360b0f9db3",
+                "resourcePath": "objects\\obj_walls_5\\obj_walls_5.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "41e980d3-d7af-4369-b311-a6bfaed8d7d9",
             "Value": {
                 "id": "77472ced-9e7f-421b-822f-61c669d93cc2",
@@ -266,7 +274,7 @@
             "Key": "703ec198-4f69-4769-8737-c817e90dfde6",
             "Value": {
                 "id": "df3d7cd2-25e0-41de-976f-1ef5c11796af",
-                "resourcePath": "sprites\\sprite15\\sprite15.yy",
+                "resourcePath": "sprites\\walls4\\walls4.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "b2565fc9-11ae-427b-8e3e-e7e08432d69c",
+            "Value": {
+                "id": "9c555aa8-b8bc-491a-8f71-a128a060443b",
+                "resourcePath": "sprites\\walls5\\walls5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b2634b0e-9913-48cf-ac92-73009c5a0b7b",
             "Value": {
                 "id": "284ae4d3-bbc8-46f6-9f5a-685c44d030f8",
@@ -442,7 +458,7 @@
             "Key": "bc1f5503-f4f1-47df-b60c-7c9d6b0b5768",
             "Value": {
                 "id": "9ac74a35-1e09-4fbd-b26f-c6a695f6e470",
-                "resourcePath": "objects\\obj_walls2\\obj_walls2.yy",
+                "resourcePath": "objects\\obj_walls_2\\obj_walls_2.yy",
                 "resourceType": "GMObject"
             }
         },
