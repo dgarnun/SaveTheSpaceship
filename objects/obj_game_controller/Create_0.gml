@@ -20,6 +20,8 @@ view_w_half = camera_get_view_width(cam) / 2;
 view_h_half = camera_get_view_height(cam) / 2;
 // Initiate zoom factor
 zoom_factor = 1;
+// No zoom when game starts
+zoom_view = false;
 
 // Turn off layer when in initial game menu
 var index = 0;

@@ -12,7 +12,7 @@ if pause {
 }
 
 // Pause
-if (keyboard_check(vk_escape)) {
+if (keyboard_check_pressed(vk_escape)) {
 	var index = 0;
 	repeat(ds_list_size(global.layers) ) {
 		layer_set_visible(layer_get_id(global.layers[| index++]), false);
@@ -22,7 +22,7 @@ if (keyboard_check(vk_escape)) {
 }
 
 // Fullscreen
-if (keyboard_check(vk_f4)) {
+if (keyboard_check_pressed(vk_f4)) {
 	if window_get_fullscreen() {
 		window_set_fullscreen(false);
 	}
@@ -30,6 +30,3 @@ if (keyboard_check(vk_f4)) {
 		window_set_fullscreen(true);
 	}
 } 
-
-
-

@@ -29,7 +29,9 @@ if pause {
 		// Print instructions
 		var vertical_offset = 30;
 		draw_set_color(c_ltgray);
-		draw_text(20, vertical_offset, "Camera: W - Up; S - Down; A - Left; D - Right; Z - Zoom");
+		draw_text(20, vertical_offset, "Camera: W - Up; S - Down; A - Left; D - Right; Z - Zoom [on/off]");
+		vertical_offset += 30;
+		draw_text(20, vertical_offset, "press F4 for full screen [on/off]");
 		vertical_offset += 30;
 		draw_text(20, vertical_offset, "\"1\" select Marvin");
 		vertical_offset += 30;
