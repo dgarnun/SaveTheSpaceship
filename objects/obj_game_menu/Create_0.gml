@@ -3,7 +3,7 @@ randomize();
 
 // Layers to switch
 global.layers = ds_list_create();
-ds_list_add(global.layers, "inner_walls", "robots", "walls", "floor");
+ds_list_add(global.layers, "inner_walls", "robots", "walls", "floor", "items");
 
 // Set game font for the GUI
 draw_set_font(fnt_GUI);
