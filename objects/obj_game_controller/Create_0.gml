@@ -1,10 +1,10 @@
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
-global.marvin = instance_create_layer(1100, 700, global.robot_instances_layer, obj_robot_marvin);
-global.hal = instance_create_layer(1100, 780, global.robot_instances_layer, obj_robot_hal);
+global.marvin = instance_create_layer(1100, 780, global.robot_instances_layer, obj_robot_marvin);
+global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_robot_hal);
 global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
-global.data = instance_create_layer(1100, 970, global.robot_instances_layer, obj_robot_data);
+global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
 
 // Set main camera and speed 
 cam = view_camera[0];
