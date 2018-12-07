@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "006a5f9a-ad23-430b-aa62-afdb3c106084",
+            "Value": {
+                "id": "3b3389be-d959-4ec5-8d0f-c6b9e813639c",
+                "resourcePath": "sprites\\spr_ship_hull_unit\\spr_ship_hull_unit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "09a00394-0aff-4fd3-8a37-eed698b9bab3",
             "Value": {
                 "id": "41f06fd8-4669-47e2-9eb6-623576aed80b",
@@ -228,6 +236,22 @@
                 "id": "52d1526b-7940-4ffe-986b-81754924ed09",
                 "resourcePath": "views\\46b3ab0f-8661-457a-96c6-e0a5827c72c5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "47a07185-8a47-4832-bf29-0781a3f1bd5d",
+            "Value": {
+                "id": "a4d24b31-fbea-45e3-b5d7-67f9ef104f38",
+                "resourcePath": "sprites\\spr_ship_dist_unit_11\\spr_ship_dist_unit_11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "49ab826c-0260-4c29-89f7-f5afafdc3cdf",
+            "Value": {
+                "id": "81e62e4c-9f1b-4eca-83b8-3edf9469fc9d",
+                "resourcePath": "sprites\\spr_ship_dist_unit_1\\spr_ship_dist_unit_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -572,6 +596,14 @@
                 "id": "9e494e9c-e039-460a-badd-da57987fd6d4",
                 "resourcePath": "objects\\obj_robot_data\\obj_robot_data.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e0710968-d796-41af-a583-345d06c16a91",
+            "Value": {
+                "id": "aea5a11b-3b30-4eff-b21f-794b19d0f958",
+                "resourcePath": "sprites\\spr_ship_fuel_unit\\spr_ship_fuel_unit.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

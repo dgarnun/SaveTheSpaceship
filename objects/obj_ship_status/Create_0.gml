@@ -1,3 +1,3 @@
-distance_to_earth = 0;
+distance_to_earth = 10000;
 fuel = 10000;
-integrity = 100;
+hull = 10000;
