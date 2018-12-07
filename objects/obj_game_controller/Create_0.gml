@@ -6,6 +6,10 @@ global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_
 global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
 
+// Level variables
+global.level = 1;
+global.points = 0;
+
 // Set main camera and speed 
 cam = view_camera[0];
 camera_speed = 10;

@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "22576923-ce8a-4649-be56-680e1beef94a",
+            "Value": {
+                "id": "6608b3af-50fd-4451-bac9-4822b24407e1",
+                "resourcePath": "objects\\obj_parent_failure\\obj_parent_failure.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2953f1cd-1113-4a83-8deb-bf82bd285e59",
             "Value": {
                 "id": "5a353c53-94f9-4a01-8183-6b732ed4e66a",
@@ -124,6 +132,14 @@
                 "id": "2849b0f6-8ff8-467c-8585-d778b32bac6b",
                 "resourcePath": "sprites\\spr_floor_tile\\spr_floor_tile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3a18a225-b48b-4c51-9b9a-52df7d63f2c8",
+            "Value": {
+                "id": "3eab80c8-d25a-4366-b621-adc92a24366d",
+                "resourcePath": "views\\3a18a225-b48b-4c51-9b9a-52df7d63f2c8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -447,6 +463,14 @@
             }
         },
         {
+            "Key": "b6ce0458-ba0a-4fe3-a582-a0bf144ad0d5",
+            "Value": {
+                "id": "628ccf7b-2648-4404-850f-586bbf3b0bb4",
+                "resourcePath": "objects\\obj_ship_status\\obj_ship_status.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b8b15600-14ae-45a3-8308-888e91d351fd",
             "Value": {
                 "id": "41e3f86a-4138-4069-a108-8fc181ddd014",
@@ -588,6 +612,14 @@
                 "id": "be3fc2f6-5e62-4fc0-b905-2446c3900b67",
                 "resourcePath": "sprites\\sprite_collision\\sprite_collision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f8b056f6-edab-4e90-9241-76e6e8274a8a",
+            "Value": {
+                "id": "9cfca895-1727-4559-a678-9be3190462cc",
+                "resourcePath": "views\\f8b056f6-edab-4e90-9241-76e6e8274a8a.yy",
+                "resourceType": "GMFolder"
             }
         }
     ],
