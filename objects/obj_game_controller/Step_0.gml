@@ -19,6 +19,7 @@ if keyboard_check(ord("1")) {
 	global.marvin.is_selected = true;
 	x = global.marvin.x;
 	y = global.marvin.y;
+	audio_play_sound(select_robot, 1, false);
 }
 // 2 -> Hal
 if keyboard_check(ord("2")) {
@@ -26,6 +27,7 @@ if keyboard_check(ord("2")) {
 	global.hal.is_selected = true;
 	x = global.hal.x;
 	y = global.hal.y;
+	audio_play_sound(select_robot, 1, false);
 }
 // 3 -> Arnold
 if keyboard_check(ord("3")) {
@@ -33,6 +35,7 @@ if keyboard_check(ord("3")) {
 	global.arnold.is_selected = true;
 	x = global.arnold.x;
 	y = global.arnold.y;
+	audio_play_sound(select_robot, 1, false);
 }
 // 4 -> Data
 if keyboard_check(ord("4")) {
@@ -40,6 +43,7 @@ if keyboard_check(ord("4")) {
 	global.data.is_selected = true;
 	x = global.data.x;
 	y = global.data.y;
+	audio_play_sound(select_robot, 1, false);
 }
 
 view_w_half = camera_get_view_width(cam) / 2;
@@ -53,7 +57,10 @@ y = clamp(y, view_h_half, room_height - view_h_half);
 camera_set_view_pos(cam, x - view_w_half , y - view_h_half);
 
 // Zoom subsystem
-if keyboard_check_pressed(ord("Z")) zoom_view = !zoom_view;
+if keyboard_check_pressed(ord("Z")) {
+	zoom_view = !zoom_view;
+	audio_play_sound(zoom, 1, false);
+}
 if (zoom_view) {
 	zoom_factor += 0.05;
 } else {
