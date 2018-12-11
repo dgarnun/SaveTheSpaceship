@@ -43,4 +43,4 @@ mp_grid_add_instances(global.grid, external_walls, true);
 mp_grid_add_instances(global.grid, obj_walls_parent, true);
 
 // Background music
-audio_play_sound(background_music, 1, true);
+audio_play_sound(snd_background_music, 1, true);

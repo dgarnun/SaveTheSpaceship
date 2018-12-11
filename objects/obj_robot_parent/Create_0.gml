@@ -22,3 +22,4 @@ robot_integrity = 100;
 // A path for every robot
 path = path_add();
 
+has_been_shutdown = false;

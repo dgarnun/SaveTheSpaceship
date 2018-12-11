@@ -11,13 +11,19 @@ if has_target {
 	}
 }
 
+// Limit battery values
 robot_battery = clamp(robot_battery, 0, 100);
 
+// Recognize when robot is on a charging area
 if place_meeting(x, y, obj_charge_area) {
 	robot_battery += robot_charging_speed;
 }
 
-if robot_battery == 0 {
+// Shutdown robot if battery level is 0
+if robot_battery == 0 && !has_been_shutdown {
 	if path_exists(path) path_end();
+	audio_play_sound(snd_robot_shutdown, 1, false);
+	has_been_shutdown = true;
 	robot_speed = 0;
 }
+
