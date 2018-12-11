@@ -10,6 +10,9 @@ global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj
 global.level = 1;
 global.points = 0;
 
+// Create a ship
+global.ship = instance_create_layer(0, 0, layer_get_id("control"), obj_ship_status);
+
 // Set main camera and speed 
 cam = view_camera[0];
 camera_speed = 10;

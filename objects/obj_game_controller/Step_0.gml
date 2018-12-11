@@ -75,8 +75,8 @@ camera_set_view_size(cam, view_wview, view_hview);
 
 // Send a target to the selected robot
 if (mouse_check_button(mb_left)) {
-	audio_play_sound(snd_robot_affirmative, 1, false);
 	if (global.selected_robot) {
+		audio_play_sound(snd_robot_affirmative, 1, false);
 		var instance = global.selected_robot;
 		with ((instance)) {
 			x_target = mouse_x;
