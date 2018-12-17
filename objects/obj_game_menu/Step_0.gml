@@ -11,6 +11,10 @@ if pause {
 	last_selected = menu_index;
 }
 
+// If our windows hasn't got focus then pause
+if !window_has_focus()
+	pause = true;
+
 // Pause
 if (keyboard_check_pressed(vk_escape)) {
 	var index = 0;

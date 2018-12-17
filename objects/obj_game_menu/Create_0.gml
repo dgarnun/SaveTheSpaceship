@@ -8,12 +8,11 @@ ds_list_add(global.layers, "inner_walls", "robots", "walls", "floor", "items");
 // Set game font for the GUI
 draw_set_font(fnt_GUI);
 
+// Initial state
 pause = true;
 game_init = false;
 
-// If our windows hasn't got focus then pause
-if !window_has_focus()
-	pause = true;
+
 
 menu_x = 64;
 menu_y = 660;

@@ -1,5 +1,6 @@
 if pause {
 	switch (menu_index) {
+		// Init game
 		case 0:
 			pause = false;
 			game_init = true;
@@ -9,9 +10,11 @@ if pause {
 			}
 			instance_activate_all();
 			break;
+		// Show instructions
 		case 1:
 			instructions = true;
 			break;
+		// End game
 		case 2:
 			game_end();
 			break;

@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2e4f31fa-6ee4-4241-8228-98128b87ac44",
+            "Value": {
+                "id": "cb831f9d-45c3-4966-b8bf-a02e9b676a87",
+                "resourcePath": "sprites\\spr_hull_repair_area\\spr_hull_repair_area.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2ee71be1-d455-496e-a02d-29ed98265171",
             "Value": {
                 "id": "f21c2e8b-45a0-481d-a4e8-e5d0c4b73e2f",
@@ -724,6 +732,14 @@
                 "id": "9cfca895-1727-4559-a678-9be3190462cc",
                 "resourcePath": "views\\f8b056f6-edab-4e90-9241-76e6e8274a8a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fa95ae18-63b3-45bb-838a-c21efbe8ec37",
+            "Value": {
+                "id": "d4e9ca8f-c8e2-4fc1-91b2-50b1538ad043",
+                "resourcePath": "objects\\obj_hull_repair_area\\obj_hull_repair_area.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
