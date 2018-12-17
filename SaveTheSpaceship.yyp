@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1416212b-32c0-4bbc-aee9-ef54b614feda",
+            "Value": {
+                "id": "da1d1690-3499-4a70-9914-ec6c433b0484",
+                "resourcePath": "sounds\\snd_meteoric_impact\\snd_meteoric_impact.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1cdb07c8-c084-4954-8831-84ea18a6787b",
             "Value": {
                 "id": "3ea66cb2-15e8-49f9-8d2e-50afaa0a9b8c",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "955d5da6-9744-4790-b0cb-69a109a793af",
+            "Value": {
+                "id": "919bbef0-ac32-42f6-9a1c-e645f62293df",
+                "resourcePath": "sounds\\snd_fire\\snd_fire.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9794e292-4e14-4b08-b76d-2dbd42bb71d5",
             "Value": {
                 "id": "e3f27a8e-2ac5-4b2f-8b33-d4e4a8e1cfc7",
@@ -484,6 +500,14 @@
                 "id": "3fbe4352-3792-4df3-8857-36b2bc33b3e6",
                 "resourcePath": "views\\acefa620-9b0f-4b20-ac4c-41a24ac75672.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "aea1a9ad-5a64-4174-8db6-a422b028fca0",
+            "Value": {
+                "id": "5909d935-7445-454c-ba45-d77a434681e2",
+                "resourcePath": "sounds\\snd_fire_alarm\\snd_fire_alarm.yy",
+                "resourceType": "GMSound"
             }
         },
         {
