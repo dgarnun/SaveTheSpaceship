@@ -8,8 +8,6 @@ has_target = false;
 x_target = noone;
 y_target = noone;
 
-// Speed. However, each robot should have a particular speed value
-robot_speed = 1;
 
 // Batteries
 robot_battery = 100;

@@ -11,6 +11,19 @@ if pause {
 	last_selected = menu_index;
 }
 
+if instructions {
+	if keyboard_check_pressed(ord("A")) {
+		instruction_page -= 1;
+	}
+	
+	if keyboard_check_pressed(ord("D")) {
+		instruction_page += 1;
+	}
+	
+	instruction_page = clamp(instruction_page, 0, max_instruction_pages);
+
+}
+
 // If our windows hasn't got focus then pause
 if !window_has_focus()
 	pause = true;

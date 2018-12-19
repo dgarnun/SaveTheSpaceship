@@ -1,3 +1,9 @@
+// Scores
+global.score_for_hull_repair = 10;
+global.score_for_finish_level = 100;
+global.score_for_repair_robot = 5;
+global.score_for_destroy_alien = 25;
+
 // Create all robot related variables and instances
 global.selected_robot = noone;
 global.robot_instances_layer = layer_get_id("robots");
@@ -8,7 +14,6 @@ global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj
  
 // Level variables
 global.level = 1;
-global.points = 0;
 global.event_ticker = 0;
 
 // Create a ship
@@ -18,7 +23,6 @@ global.ship = instance_create_layer(0, 0, layer_get_id("control"), obj_ship_stat
 global.camera_shake = 0;
 cam = view_camera[0];
 camera_speed = 10;
-
 
 // Save original view values
 view_w = camera_get_view_width(cam);

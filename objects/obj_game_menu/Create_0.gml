@@ -12,8 +12,6 @@ draw_set_font(fnt_GUI);
 pause = true;
 game_init = false;
 
-
-
 menu_x = 64;
 menu_y = 660;
 button_h = 30;
@@ -25,6 +23,8 @@ buttons = array_length_1d(button);
 
 menu_index = 0;
 last_selected = 0;
+instruction_page = 0;
+max_instruction_pages = 5;
 
 cam = view_camera[0];
 instructions = false;
