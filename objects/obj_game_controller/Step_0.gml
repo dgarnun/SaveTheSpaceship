@@ -19,7 +19,7 @@ if keyboard_check(ord("1")) {
 	global.marvin.is_selected = true;
 	x = global.marvin.x;
 	y = global.marvin.y;
-	audio_play_sound(snd_select_robot, 1, false);
+	audio_play_sound(snd_select_robot, 5, false);
 }
 // 2 -> Hal
 if keyboard_check(ord("2")) {
@@ -27,7 +27,7 @@ if keyboard_check(ord("2")) {
 	global.hal.is_selected = true;
 	x = global.hal.x;
 	y = global.hal.y;
-	audio_play_sound(snd_select_robot, 1, false);
+	audio_play_sound(snd_select_robot, 5, false);
 }
 // 3 -> Arnold
 if keyboard_check(ord("3")) {
@@ -35,7 +35,7 @@ if keyboard_check(ord("3")) {
 	global.arnold.is_selected = true;
 	x = global.arnold.x;
 	y = global.arnold.y;
-	audio_play_sound(snd_select_robot, 1, false);
+	audio_play_sound(snd_select_robot, 5, false);
 }
 // 4 -> Data
 if keyboard_check(ord("4")) {
@@ -43,15 +43,20 @@ if keyboard_check(ord("4")) {
 	global.data.is_selected = true;
 	x = global.data.x;
 	y = global.data.y;
-	audio_play_sound(snd_select_robot, 1, false);
+	audio_play_sound(snd_select_robot, 5, false);
 }
 
+// Camera variables
 view_w_half = camera_get_view_width(cam) / 2;
 view_h_half = camera_get_view_height(cam) / 2;
-
 // x and y value cannot be less than view_?_half or more than  
 x = clamp(x, view_w_half, room_width - view_w_half);
 y = clamp(y, view_h_half, room_height - view_h_half);
+
+// Shake camera (for hull impacts)
+x += random_range(-global.camera_shake, global.camera_shake);
+y += random_range(-global.camera_shake, global.camera_shake);
+global.camera_shake *= 0.9;
 
 // Set position and move the cam
 camera_set_view_pos(cam, x - view_w_half , y - view_h_half);
@@ -85,3 +90,26 @@ if (mouse_check_button(mb_left)) {
 		}
 	}	
 }
+
+// Random difficult-dependend event generation subsystem (hull impacts)
+// 
+// First, let's see if we can trigger an event
+if global.event_ticker > 60 {
+	var upper_range = 10 - global.level;
+	if upper_range < 5 {
+		upper_range = 5;
+	}
+	randomize();
+	var ticket = round(random_range(0, upper_range));
+	var winner = round(random_range(0, upper_range));
+	
+	if ticket == winner {
+		audio_play_sound(snd_meteoric_impact, 10, 0);
+		global.ship_hull -= (300 + global.level) ;
+		global.camera_shake = 15;
+	}
+	// Event has taken place, reset event counter
+	global.event_ticker = 0;
+}
+
+global.event_ticker += 1;

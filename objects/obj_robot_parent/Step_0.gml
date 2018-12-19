@@ -27,3 +27,13 @@ if robot_battery == 0 && !has_been_shutdown {
 	robot_speed = 0;
 }
 
+// Recognize when robot is on a hull reparing area
+if place_meeting(x, y, obj_hull_repair_area) {
+	global.ship_hull += robot_repairing_speed;
+}
+
+// Repair a fallen robot
+if place_meeting(x, y, obj_robot_parent) {
+	
+}
+
