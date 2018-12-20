@@ -105,8 +105,11 @@ if global.event_ticker > 60 {
 	
 	if ticket == winner {
 		audio_play_sound(snd_meteoric_impact, 10, 0);
-		global.ship_hull -= (300 + global.level) ;
+		global.ship_hull -= (300 + global.level);
 		global.camera_shake = 15;
+		
+		// alien 
+		instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
 	}
 	// Event has taken place, reset event counter
 	global.event_ticker = 0;
