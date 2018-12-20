@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "2e013977-31fe-483a-972f-47adb7bad2fa",
+            "Value": {
+                "id": "0a9a61b2-fa6f-4dd8-b4e8-379be08b1e46",
+                "resourcePath": "sounds\\snd_robot_hit\\snd_robot_hit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2e4f31fa-6ee4-4241-8228-98128b87ac44",
             "Value": {
                 "id": "cb831f9d-45c3-4966-b8bf-a02e9b676a87",

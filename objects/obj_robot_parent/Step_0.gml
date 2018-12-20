@@ -21,7 +21,7 @@ if place_meeting(x, y, obj_charge_area) {
 }
 
 // Shutdown robot if battery level is 0
-if robot_battery == 0 && !has_been_shutdown {
+if (robot_battery == 0 || robot_integrity == 0) && !has_been_shutdown {
 	if path_exists(path) path_end();
 	audio_play_sound(snd_robot_shutdown, 1, false);
 	has_been_shutdown = true;
@@ -46,8 +46,8 @@ if place_meeting(x, y, obj_hull_repair_area) {
 
 // Recognize when robot is on a refueling  area
 if place_meeting(x, y, obj_refueling_area) {
-	global.ship_f  += robot_repairing_speed;
-	if global.ship_f  < 10000 {
+	global.ship_fuel  += robot_repairing_speed;
+	if global.ship_fuel  < 10000 {
 		score += 0.25;
 	}
 }
@@ -57,5 +57,8 @@ if place_meeting(x, y, obj_robot_parent) {
 	if other.has_been_shutdown or other.robot_battery < 25 {
 		robot_battery += robot_charging_speed;
 	}
+	if other.has_been_shutdown or other.robot_integrity < 100 {
+		robot_integrity += robot_repairing_speed;
+	}	
 }
 

@@ -16,3 +16,28 @@
 //		}	
 //	}
 //}
+
+// If our alien hasn't move we have to get another target
+if (x != xprevious || y != yprevious) {
+	_x = irandom_range(-target_offset, target_offset);
+	_y = irandom_range(-target_offset, target_offset);
+}
+
+
+if not path_exists(alien_path) {
+	if (mp_linear_path(alien_path, _x+x, _y+y, 1, true)) {
+		path_start(alien_path, speed, path_action_stop, true);
+	}
+}
+
+//if not path_exists(alien_path) {
+//	if (mp_grid_path(alien_grid, alien_path, x, y, _x+x, _y+y, false)) {
+//		path_start(alien_path, speed, path_action_stop, 0);
+//	}
+//}
+// Path
+//alien_path = path_add();
+//alien_grid = mp_grid_create(0, 0, max_horizontal_tiles, max_vertical_tiles, cell_size, cell_size);
+//mp_grid_add_instances(alien_grid, external_walls, true);
+//mp_grid_add_instances(alien_grid, obj_walls_parent, true);
+//mp_grid_add_instances(alien_grid, obj_robot_parent, true);
