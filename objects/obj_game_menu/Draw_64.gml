@@ -6,8 +6,9 @@ if pause {
 	if not instructions {
 		// Print Game Logo
 		draw_set_color(c_yellow);
-		draw_text_transformed(camera_get_view_width(cam) * 0.15, camera_get_view_height(cam) * 0.45, "SAVE THE SPACESHIP!", 3, 8, 0);
-	
+		if not game_init {
+			draw_text_transformed(camera_get_view_width(cam) * 0.15, camera_get_view_height(cam) * 0.35, "SAVE THE SPACESHIP!", 3, 8, 0);
+		}	
 		// Print Menu
 		var i = 0;
 		repeat(buttons) {
@@ -24,12 +25,16 @@ if pause {
 			// Mini help
 			draw_set_color(c_ltgray);
 			draw_text_transformed(1080, 720, "(WASD + Enter)", 0.7, 0.7, 0);
+			
+			// Version
+			draw_text_transformed(1196, 10, "v." + string(round(GM_build_date)), 0.7, 0.7, 0);
 		}	
 	} else {
 		// Instruction book
 		var vertical_offset = 30;
 		switch (instruction_page) {
 			case 0:
+				draw_sprite(hal_idle, 1, 10,10);
 				draw_set_color(c_ltgray);
 				draw_text(20, vertical_offset, "Camera: W - Up; S - Down; A - Left; D - Right; Z - Zoom [on/off]");
 				vertical_offset += 30;

@@ -8,7 +8,6 @@ has_target = false;
 x_target = noone;
 y_target = noone;
 
-
 // Batteries
 robot_battery = 100;
 robot_consumption = 1;

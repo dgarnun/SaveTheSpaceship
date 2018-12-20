@@ -91,7 +91,7 @@ if (mouse_check_button(mb_left)) {
 	}	
 }
 
-// Random difficult-dependend event generation subsystem (hull impacts)
+// Random difficult-driven event generation subsystem (hull impacts)
 // 
 // First, let's see if we can trigger an event
 if global.event_ticker > 60 {

@@ -38,7 +38,7 @@ zoom_factor = 1;
 // No zoom when game starts
 zoom_view = false;
 
-// Turn off layer when in initial game menu
+// Turn off layers when in initial game menu
 var index = 0;
 repeat(ds_list_size(global.layers) ) {
 	layer_set_visible(layer_get_id(global.layers[| index++]), false);
