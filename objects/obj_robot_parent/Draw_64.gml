@@ -1,5 +1,5 @@
 if is_selected 
-	draw_set_color(c_purple)
+	draw_set_color(c_yellow);
 else 
 	draw_set_color(c_white);
 draw_text(0 + robot_gui_x_gap, 700, robot_name);

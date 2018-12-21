@@ -94,6 +94,11 @@ if pause {
 				draw_text(20, 230, "Get an eye on this. They can peter out your fuel!");
 				draw_text(20, 260, "Aliens can be captured by robots. But they will suffer damage.");
 				
+				draw_text(20, 350, "Due to ship age a breakage is likely to ocurr which means FIRE!");
+				draw_text(20, 380, "Robots can stop fire but at the expense of some damage.");
+				draw_sprite(img_ins_7, 1, 20, 410);
+				draw_text(20, 590, "Every second you don't stop fire it can get worse");
+				
 				break;
 				
 			default:

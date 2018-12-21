@@ -91,7 +91,7 @@ if (mouse_check_button(mb_left)) {
 	}	
 }
 
-// Random difficult-driven event generation subsystem (hull impacts)
+// Random difficult-driven event generation subsystem
 // 
 // First, let's see if we can trigger an event
 if global.event_ticker > 60 {
@@ -100,7 +100,7 @@ if global.event_ticker > 60 {
 	var upper_range = clamp(30 - global.level, 1, 30);
 	
 	// Get some tickets for aliens
-	for (var i = 0; i <= (global.level * 3) ; i++) {
+	for (var i = 0; i <= global.level ; i++) {
 		var ticket = irandom_range(1, upper_range);
 		var winner = round(upper_range / 2);
 		var spawn_cell = irandom_range(0, array_height_2d(alien_array) - 1);
@@ -126,6 +126,7 @@ if global.event_ticker > 60 {
 	}
 	
 	// Get some tickets for fire
+	upper_range *= 1.5;
 	for (var i = 0; i <= (global.level / 2) ; i++) {
 		var ticket = irandom_range(1, upper_range);
 		var winner = round(upper_range / 2);
@@ -193,7 +194,7 @@ global.event_ticker += 1;
 
 // We have reached the earth, level up, reset values, harder the game!
 if global.ship_distance_to_earth <= 0 {
-	audio_stop_sound(snd_fire_alarm);
+	audio_stop_all();
 	
 	// LevelUp!
 	audio_play_sound(snd_levelup, 11, false);
@@ -224,6 +225,9 @@ if global.ship_distance_to_earth <= 0 {
 	// Clear fire
 	instance_destroy(obj_fire);
 	ds_list_clear(global.fire_list);
+	
+	// Music again...
+	audio_play_sound(snd_background_music, 1, true);
 }
 
 // Game over
