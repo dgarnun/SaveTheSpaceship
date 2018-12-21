@@ -1,0 +1,12 @@
+El juego precisa de Game Maker 2 para su compilación.
+
+Desde la página web del fabricante puede obtenerse una versión gratuita, pero es posible que no contenga todas las funcionalidades requeridas para su desempeño:
+
+https://accounts.yoyogames.com/downloads
+
+Una vez instalado el IDE:
+
+1.- Menu "Source Control" -> "Clone Repository"
+2.- Añadimos la URL de este repositorio.
+3.- Debería hacer "pull" de forma automática, sino, desde el mismo menu del paso 1, seleccionar: "Pull Changes"
+4.- Menu "Build" -> "Run" o tecla F5. El juego debería compilarse sin errores y funcionar.
