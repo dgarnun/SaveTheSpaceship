@@ -39,16 +39,16 @@ if robot_battery >= 25 && has_been_shutdown {
 // Recognize when robot is on a hull reparing area
 if place_meeting(x, y, obj_hull_repair_area) {
 	global.ship_hull += robot_repairing_speed;
-	if global.ship_hull < 10000 {
-		score += 0.25;
+	if global.ship_hull < global.max_ship_levels {
+		score += 1;
 	}
 }
 
-// Recognize when robot is on a refueling  area
+// Recognize when robot is on a refueling area
 if place_meeting(x, y, obj_refueling_area) {
 	global.ship_fuel  += robot_repairing_speed;
-	if global.ship_fuel  < 10000 {
-		score += 0.25;
+	if global.ship_fuel < global.max_ship_levels {
+		score += 1;
 	}
 }
 

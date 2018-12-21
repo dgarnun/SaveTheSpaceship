@@ -1,8 +1,8 @@
 // Scores
 global.score_for_hull_repair = 10;
-global.score_for_finish_level = 100;
+global.score_for_finish_level = 1000;
 global.score_for_repair_robot = 5;
-global.score_for_destroy_alien = 25;
+global.score_for_destroy_alien = 250;
 
 // Create all robot related variables and instances
 global.selected_robot = noone;
@@ -11,6 +11,9 @@ global.marvin = instance_create_layer(1100, 780, global.robot_instances_layer, o
 global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_robot_hal);
 global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
+
+// Alien map
+global.alien_map = ds_map_create();
  
 // Level variables
 global.level = 1;

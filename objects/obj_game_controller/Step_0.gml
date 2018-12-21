@@ -100,13 +100,14 @@ if global.event_ticker > 60 {
 	var upper_range = clamp(30 - global.level, 1, 30);
 	
 	// Get some tickets for aliens
-	for (var i = 0; i <= (global.level * 5) ; i++) {
+	for (var i = 0; i <= (global.level * 4) ; i++) {
 		var ticket = irandom_range(1, upper_range);
-		var winner = irandom_range(1, upper_range);	
-		if ticket == winner and global.number_of_concurrent_aliens <= global.level {
+		var winner = round(upper_range / 2);
+		if (ticket == winner and (global.number_of_concurrent_aliens < global.level)) {
 			// Spawn an Alien 
-			instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
-			instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+			var alien = instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+			ds_map_add(global.alien_map, alien, alien);
+			continue;
 		}
 	}
 
@@ -131,7 +132,9 @@ global.event_ticker += 1;
 // We have reached the earth, level up, reset values, harder the game!
 if global.ship_distance_to_earth <= 0 {
 	
+	// LevelUp!
 	audio_play_sound(snd_levelup, 11, false);
+	score += global.score_for_finish_level;
 	global.level += 1;
 	if global.level > 30 {
 		// You finished the game
@@ -150,8 +153,10 @@ if global.ship_distance_to_earth <= 0 {
 	global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 	global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
 	
-	// Destroy aliens
+	// Destroy aliens and clear their map
+	global.number_of_concurrent_aliens = 0;
 	instance_destroy(obj_alien);
+	ds_map_clear(global.alien_map);
 }
 
 // Game over
