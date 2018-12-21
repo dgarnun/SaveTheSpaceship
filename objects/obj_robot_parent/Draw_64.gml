@@ -18,4 +18,4 @@ else if robot_integrity <= 50 && robot_integrity > 20
 	draw_set_color(c_yellow);
 else if robot_integrity <= 20
 	draw_set_color(c_red);
-draw_text(0 + robot_gui_x_gap, 740, "INT: " + string(robot_integrity));
+draw_text(0 + robot_gui_x_gap, 740, "INT: " + string(round(robot_integrity)));

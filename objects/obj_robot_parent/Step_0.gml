@@ -18,6 +18,7 @@ robot_integrity = clamp(robot_integrity, 0, 100);
 // Recognize when robot is on a charging area
 if place_meeting(x, y, obj_charge_area) {
 	robot_battery += robot_charging_speed;
+	robot_integrity += robot_charging_speed;
 }
 
 // Shutdown robot if battery level is 0
@@ -62,3 +63,8 @@ if place_meeting(x, y, obj_robot_parent) {
 	}	
 }
 
+
+// If low battery...buzz
+if robot_battery < 25 and global.event_ticker and not has_been_shutdown == 60 {
+	audio_play_sound(snd_low_battery, 8, false);
+}

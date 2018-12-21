@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "4b118841-f7b3-4bc2-ad85-591789a20599",
+            "Value": {
+                "id": "63424382-94b7-4c93-be0d-9062112181fd",
+                "resourcePath": "sounds\\snd_low_battery\\snd_low_battery.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4b1858ca-265d-4be2-bdc0-e1283112e12f",
             "Value": {
                 "id": "3aea8122-81fd-47fa-87ea-bf7f849b326e",
