@@ -1,5 +1,5 @@
 // Max levels
-global.max_ship_levels = 5000
+global.max_ship_levels = 10000;
 
 // Global ship variables
 global.ship_distance_to_earth = global.max_ship_levels;

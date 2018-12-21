@@ -113,6 +113,6 @@ if global.gameover {
 	image_angle += 1;
 	draw_set_color(c_ltgray);
 	draw_text_transformed(1280 / 2, 768 / 2, "GAME OVER!", 2, 2, image_angle);
-	draw_text(30, 720, "your Score: " + string(score));
+	draw_text(1280 / 2, 700, "your Score: " + string(score));
 	draw_text_transformed(1080, 720, "Press (ESC) for main menu.", 0.7, 0.7, 0);
 }

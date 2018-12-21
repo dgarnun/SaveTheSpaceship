@@ -1,8 +1,9 @@
 // Scores
 global.score_for_hull_repair = 10;
-global.score_for_finish_level = 1000;
+global.score_for_finish_level = 500;
 global.score_for_repair_robot = 5;
-global.score_for_destroy_alien = 250;
+global.score_for_destroy_alien = 50;
+global.score_for_fire_extintion = 25;
 
 // Create all robot related variables and instances
 global.selected_robot = noone;
@@ -24,6 +25,19 @@ alien_array[6,0] = 2240; alien_array[6,1] = 500;
 alien_array[7,0] = 1560; alien_array[7,1] = 540;
 alien_array[8,0] = 1500; alien_array[8,1] = 1375;
 alien_array[9,0] = 2175; alien_array[9,1] = 1200;
+
+// Fire event list
+global.fire_list = ds_list_create();
+fire_array[0,0] = 475; fire_array[0,1] = 800;
+fire_array[1,0] = 2000; fire_array[1,1] = 800;
+fire_array[2,0] = 2000; fire_array[2,1] = 1250;
+fire_array[3,0] = 2000; fire_array[3,1] = 300;
+fire_array[4,0] = 730; fire_array[4,1] = 275;
+fire_array[5,0] = 710; fire_array[5,1] = 1350;
+fire_array[6,0] = 2240; fire_array[6,1] = 500;
+fire_array[7,0] = 1560; fire_array[7,1] = 540;
+fire_array[8,0] = 1500; fire_array[8,1] = 1375;
+fire_array[9,0] = 2175; fire_array[9,1] = 1200;
 
 // Level variables
 global.level = 1;
