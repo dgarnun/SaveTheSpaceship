@@ -55,10 +55,10 @@ if place_meeting(x, y, obj_refueling_area) {
 
 // Repair a fallen robot and recharge battery to 25%
 if place_meeting(x, y, obj_robot_parent) {
-	if other.has_been_shutdown or other.robot_battery < 25 {
+	if other.has_been_shutdown and other.robot_battery < 25 {
 		robot_battery += robot_charging_speed;
 	}
-	if other.has_been_shutdown or other.robot_integrity < 100 {
+	if other.has_been_shutdown and other.robot_integrity < 100 {
 		robot_integrity += robot_repairing_speed;
 	}	
 }

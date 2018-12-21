@@ -96,6 +96,7 @@ if (mouse_check_button(mb_left)) {
 // First, let's see if we can trigger an event
 if global.event_ticker > 60 {
 	randomize();
+
 	// The greater the level the more chances we have
 	var upper_range = clamp(30 - global.level, 1, 30);
 	
@@ -120,7 +121,7 @@ if global.event_ticker > 60 {
 		if ticket == winner {
 			audio_play_sound(snd_meteoric_impact, 10, 0);
 			// Impact is hardened with difficult
-			global.ship_hull -= (300 + global.level);
+			global.ship_hull -= (400 + global.level);
 			global.camera_shake = 15;
 		}
 	}
@@ -186,6 +187,12 @@ if global.event_ticker > 60 {
 	}
 	ds_list_copy(global.fire_list, temp_list);
 	ds_list_destroy(temp_list);
+	
+	// Silence fire alarm is there is no longer fire
+	if ds_list_empty(global.fire_list) {
+		audio_stop_sound(snd_fire_alarm);
+		audio_stop_sound(snd_fire);
+	}
 	
 	// Event has taken place, reset event counter
 	global.event_ticker = 0;
