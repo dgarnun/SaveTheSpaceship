@@ -68,3 +68,9 @@ if pause {
 		draw_text(1080, 720, paginator);
 	}
 }
+
+if global.gameover {
+	draw_set_color(c_ltgray);
+	draw_text(20, 20, "game over");
+	draw_text(20, 60, "your Score: " + string(score));
+}

@@ -7,6 +7,7 @@ if robot_id {
 	audio_play_sound(snd_robot_hit, 10, false);
 	score += global.score_for_destroy_alien;
 	robot_id.robot_integrity -= 20;
+	global.number_of_concurrent_aliens -= 1;
 	audio_play_sound(snd_alien_captured, 10, false);
 	instance_destroy(self);
 }

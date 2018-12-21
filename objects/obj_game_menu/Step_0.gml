@@ -21,21 +21,27 @@ if instructions {
 	}
 	
 	instruction_page = clamp(instruction_page, 0, max_instruction_pages);
-
 }
 
-// If our windows hasn't got focus then pause
-if !window_has_focus()
-	pause = true;
-
-// Pause
-if (keyboard_check_pressed(vk_escape)) {
+// Pause, focus and game over
+if (keyboard_check_pressed(vk_escape) or not window_has_focus()) {
 	var index = 0;
 	repeat(ds_list_size(global.layers) ) {
 		layer_set_visible(layer_get_id(global.layers[| index++]), false);
 	}
-	pause = true;
+	
+	// If we are not terminating the game we are in pause
+	if !global.gameover {
+		pause = true;
+	} else {
+		game_restart();
+	}
+	
 	instructions = false;
+}
+
+if global.gameover and game_init {
+	instance_deactivate_all(true);
 }
 
 // Fullscreen

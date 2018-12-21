@@ -15,6 +15,8 @@ global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj
 // Level variables
 global.level = 1;
 global.event_ticker = 0;
+global.number_of_concurrent_aliens = 1;
+global.gameover = false;
 
 // Create a ship
 global.ship = instance_create_layer(0, 0, layer_get_id("control"), obj_ship_status);

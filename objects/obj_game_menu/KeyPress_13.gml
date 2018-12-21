@@ -1,6 +1,6 @@
 if pause {
 	switch (menu_index) {
-		// Init game
+		// Start the game
 		case 0:
 			pause = false;
 			game_init = true;

@@ -3,7 +3,7 @@ randomize();
 
 // Layers to switch
 global.layers = ds_list_create();
-ds_list_add(global.layers, "inner_walls", "robots", "walls", "floor", "items");
+ds_list_add(global.layers, "inner_walls", "robots", "walls", "floor", "items", "control");
 
 // Set game font for the GUI
 draw_set_font(fnt_GUI);
@@ -11,6 +11,7 @@ draw_set_font(fnt_GUI);
 // Initial state
 pause = true;
 game_init = false;
+instructions = false;
 
 menu_x = 64;
 menu_y = 660;
@@ -27,4 +28,3 @@ instruction_page = 0;
 max_instruction_pages = 5;
 
 cam = view_camera[0];
-instructions = false;

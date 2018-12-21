@@ -95,24 +95,71 @@ if (mouse_check_button(mb_left)) {
 // 
 // First, let's see if we can trigger an event
 if global.event_ticker > 60 {
-	var upper_range = 10 - global.level;
-	if upper_range < 5 {
-		upper_range = 5;
-	}
 	randomize();
-	var ticket = round(random_range(0, upper_range));
-	var winner = round(random_range(0, upper_range));
+	// The greater the level the more chances we have
+	var upper_range = clamp(30 - global.level, 1, 30);
 	
-	if ticket == winner {
-		audio_play_sound(snd_meteoric_impact, 10, 0);
-		global.ship_hull -= (300 + global.level);
-		global.camera_shake = 15;
-		
-		// alien 
-		instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+	// Get some tickets for aliens
+	for (var i = 0; i <= (global.level * 5) ; i++) {
+		var ticket = irandom_range(1, upper_range);
+		var winner = irandom_range(1, upper_range);	
+		if ticket == winner and global.number_of_concurrent_aliens <= global.level {
+			// Spawn an Alien 
+			instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+			instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+		}
 	}
+
+	// Get some tickets for meteor impacts
+	for (var i = 0; i <= global.level ; i++) {
+		var ticket = irandom_range(1, upper_range);
+		var winner = irandom_range(1, upper_range);	
+
+		if ticket == winner {
+			audio_play_sound(snd_meteoric_impact, 10, 0);
+			// Impact is hardened with difficult
+			global.ship_hull -= (300 + global.level);
+			global.camera_shake = 15;
+		}
+	}
+
 	// Event has taken place, reset event counter
 	global.event_ticker = 0;
 }
-
 global.event_ticker += 1;
+
+// We have reached the earth, level up, reset values, harder the game!
+if global.ship_distance_to_earth <= 0 {
+	
+	audio_play_sound(snd_levelup, 11, false);
+	global.level += 1;
+	if global.level > 30 {
+		// You finished the game
+	}
+	
+	// Reset ship
+	instance_destroy(global.ship);
+	global.ship = instance_create_layer(0, 0, layer_get_id("control"), obj_ship_status);
+	
+	// Reset robots
+	instance_destroy(obj_robot_parent);
+	global.selected_robot = noone;
+	global.robot_instances_layer = layer_get_id("robots");
+	global.marvin = instance_create_layer(1100, 780, global.robot_instances_layer, obj_robot_marvin);
+	global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_robot_hal);
+	global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
+	global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
+	
+	// Destroy aliens
+	instance_destroy(obj_alien);
+}
+
+// Game over
+if global.ship_fuel <= 0 or global.ship_hull <= 0 {
+	var index = 0;
+	repeat(ds_list_size(global.layers) ) {
+		layer_set_visible(layer_get_id(global.layers[| index++]), false);
+	}
+	audio_play_sound(snd_gameover, 11, false);
+	global.gameover = true;
+}
