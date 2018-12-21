@@ -7,7 +7,7 @@ if pause {
 		// Print Game Logo
 		draw_set_color(c_yellow);
 		if not game_init {
-			draw_text_transformed(camera_get_view_width(cam) * 0.15, camera_get_view_height(cam) * 0.35, "SAVE THE SPACESHIP!", 3, 8, 0);
+			draw_text_transformed(220, 250, "SAVE THE SPACESHIP!", 3, 8, 0);
 		}	
 		// Print Menu
 		var i = 0;
@@ -106,7 +106,7 @@ if pause {
 
 		} // End switch
 		draw_set_color(c_ltgray);
-		draw_text(20, 720, "Press (ESC) for main menu. (A) previous page, (S) next page.");
+		draw_text(20, 720, "Press (ESC) for main menu. (A) previous page, (D) next page.");
 		var paginator = "Page: " + string(instruction_page+1) + " / " + string(max_instruction_pages);
 		draw_text(1080, 720, paginator);
 	}

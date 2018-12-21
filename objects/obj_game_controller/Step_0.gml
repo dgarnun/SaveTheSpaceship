@@ -64,7 +64,7 @@ camera_set_view_pos(cam, x - view_w_half , y - view_h_half);
 // Zoom subsystem
 if keyboard_check_pressed(ord("Z")) {
 	zoom_view = !zoom_view;
-	audio_play_sound(snd_zoom, 1, false);
+	//audio_play_sound(snd_zoom, 1, false);
 }
 if (zoom_view) {
 	zoom_factor += 0.05;
@@ -200,9 +200,6 @@ if global.ship_distance_to_earth <= 0 {
 	audio_play_sound(snd_levelup, 11, false);
 	score += global.score_for_finish_level;
 	global.level += 1;
-	if global.level > 30 {
-		// You finished the game
-	}
 	
 	// Reset ship
 	instance_destroy(global.ship);

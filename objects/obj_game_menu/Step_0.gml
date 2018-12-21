@@ -1,5 +1,5 @@
 if game_init 
-	button[0] = "Continuar";
+	button[0] = "continue";
 
 if pause {
 	menu_move = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
@@ -52,9 +52,9 @@ if global.gameover and game_init {
 // Fullscreen
 if (keyboard_check_pressed(vk_f4)) {
 	if window_get_fullscreen() {
-		window_set_fullscreen(false);
+		window_set_fullscreen(true);
 	}
 	else {
-		window_set_fullscreen(true);
+		window_set_fullscreen(false);
 	}
 } 

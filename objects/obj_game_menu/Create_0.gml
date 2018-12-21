@@ -1,5 +1,6 @@
 // Randomize. Useful to call at start to reset random seed
 randomize();
+window_set_fullscreen(true);
 
 // Layers to switch
 global.layers = ds_list_create();
@@ -17,9 +18,9 @@ menu_x = 64;
 menu_y = 660;
 button_h = 30;
 
-button[0] = "Jugar";
-button[1] = "Instrucciones";
-button[2] = "Salir";
+button[0] = "play";
+button[1] = "instructions";
+button[2] = "exit to desktop";
 buttons = array_length_1d(button);
 
 menu_index = 0;
