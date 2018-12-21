@@ -20,11 +20,11 @@ if instructions {
 		instruction_page += 1;
 	}
 	
-	instruction_page = clamp(instruction_page, 0, max_instruction_pages);
+	instruction_page = clamp(instruction_page, 0, max_instruction_pages-1);
 }
 
 // Pause, focus and game over
-if (keyboard_check_pressed(vk_escape) or not window_has_focus()) {
+if (keyboard_check_pressed(vk_escape)) {
 	var index = 0;
 	repeat(ds_list_size(global.layers) ) {
 		layer_set_visible(layer_get_id(global.layers[| index++]), false);

@@ -8,4 +8,3 @@ global.ship_hull = global.max_ship_levels;
 
 // Alarm set to signal fuel consumption
 alarm[0] = 120;
-

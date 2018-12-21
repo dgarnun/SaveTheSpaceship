@@ -12,9 +12,19 @@ global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_
 global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
 
-// Alien map
+// Alien map and positional arrays
 global.alien_map = ds_map_create();
- 
+alien_array[0,0] = 475; alien_array[0,1] = 800;
+alien_array[1,0] = 2000; alien_array[1,1] = 800;
+alien_array[2,0] = 2000; alien_array[2,1] = 1250;
+alien_array[3,0] = 2000; alien_array[3,1] = 300;
+alien_array[4,0] = 730; alien_array[4,1] = 275;
+alien_array[5,0] = 710; alien_array[5,1] = 1350;
+alien_array[6,0] = 2240; alien_array[6,1] = 500;
+alien_array[7,0] = 1560; alien_array[7,1] = 540;
+alien_array[8,0] = 1500; alien_array[8,1] = 1375;
+alien_array[9,0] = 2175; alien_array[9,1] = 1200;
+
 // Level variables
 global.level = 1;
 global.event_ticker = 0;

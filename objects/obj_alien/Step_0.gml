@@ -5,7 +5,10 @@ global.ship_fuel -= 1;
 var robot_id = instance_place(x, y, obj_robot_parent);
 if robot_id {
 	audio_play_sound(snd_robot_hit, 10, false);
+	
 	score += global.score_for_destroy_alien;
+	global.ship_fuel += 50;
+	
 	robot_id.robot_integrity -= 10;
 	global.number_of_concurrent_aliens -= 1;
 	ds_map_delete(global.alien_map, id);

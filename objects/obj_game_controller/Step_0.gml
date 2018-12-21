@@ -103,9 +103,10 @@ if global.event_ticker > 60 {
 	for (var i = 0; i <= (global.level * 4) ; i++) {
 		var ticket = irandom_range(1, upper_range);
 		var winner = round(upper_range / 2);
-		if (ticket == winner and (global.number_of_concurrent_aliens < global.level)) {
+		var spawn_cell = irandom_range(0, array_height_2d(alien_array) - 1);
+		if (ticket == winner and (global.number_of_concurrent_aliens <= global.level)) {
 			// Spawn an Alien 
-			var alien = instance_create_layer(2000, 800, layer_get_id("control"), obj_alien);
+			var alien = instance_create_layer(alien_array[spawn_cell, 0], alien_array[spawn_cell, 1], layer_get_id("control"), obj_alien);
 			ds_map_add(global.alien_map, alien, alien);
 			continue;
 		}

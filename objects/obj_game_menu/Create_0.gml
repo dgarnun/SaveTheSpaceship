@@ -25,6 +25,6 @@ buttons = array_length_1d(button);
 menu_index = 0;
 last_selected = 0;
 instruction_page = 0;
-max_instruction_pages = 5;
+max_instruction_pages = 4;
 
 cam = view_camera[0];

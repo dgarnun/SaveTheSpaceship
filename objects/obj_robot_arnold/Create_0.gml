@@ -1,6 +1,6 @@
 event_inherited();
-fixed_robot_speed = 5;
-robot_speed = 5;
+fixed_robot_speed = 7;
+robot_speed = fixed_robot_speed;
 robot_gui_x_gap = 400;
 robot_name = "Arnold";
 robot_consumption = 0.10;
