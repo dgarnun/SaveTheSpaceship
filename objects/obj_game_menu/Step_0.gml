@@ -41,7 +41,12 @@ if (keyboard_check_pressed(vk_escape) or not window_has_focus()) {
 }
 
 if global.gameover and game_init {
+	var index = 0;
+	repeat(ds_list_size(global.layers) ) {
+		layer_set_visible(layer_get_id(global.layers[| index++]), false);
+	}
 	instance_deactivate_all(true);
+	game_init = false;
 }
 
 // Fullscreen

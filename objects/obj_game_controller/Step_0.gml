@@ -156,10 +156,6 @@ if global.ship_distance_to_earth <= 0 {
 
 // Game over
 if global.ship_fuel <= 0 or global.ship_hull <= 0 {
-	var index = 0;
-	repeat(ds_list_size(global.layers) ) {
-		layer_set_visible(layer_get_id(global.layers[| index++]), false);
-	}
 	audio_play_sound(snd_gameover, 11, false);
 	global.gameover = true;
 }
