@@ -126,7 +126,7 @@ if global.event_ticker > 60 {
 	}
 	
 	// Get some tickets for fire
-	for (var i = 0; i <= global.level ; i++) {
+	for (var i = 0; i <= (global.level / 2) ; i++) {
 		var ticket = irandom_range(1, upper_range);
 		var winner = round(upper_range / 2);
 		
