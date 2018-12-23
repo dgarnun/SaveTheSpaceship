@@ -1,0 +1,2 @@
+- Check place_free of fire extension (are we doing right? should we check the complete frame to evaluate collision with a solid wall?)
+- Move hull/fuel/distance HUD to de upper-right part of the screen.
