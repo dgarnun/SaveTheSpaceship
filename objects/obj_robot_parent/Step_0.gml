@@ -24,7 +24,9 @@ if place_meeting(x, y, obj_charge_area) {
 // Shutdown robot if battery level is 0
 if (robot_battery == 0 || robot_integrity == 0) && !has_been_shutdown {
 	if path_exists(path) path_end();
-	audio_play_sound(snd_robot_shutdown, 1, false);
+	if not audio_is_playing(snd_robot_shutdown) {
+		audio_play_sound(snd_robot_shutdown, 5, false);
+	}
 	has_been_shutdown = true;
 	robot_speed = 0;
 }
