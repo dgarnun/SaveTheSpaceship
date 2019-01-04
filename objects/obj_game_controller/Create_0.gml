@@ -12,6 +12,7 @@ global.marvin = instance_create_layer(1100, 780, global.robot_instances_layer, o
 global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_robot_hal);
 global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
+global.robot_marker = instance_create_layer(-100, -100, layer_get_id("control"), obj_selected_robot_marker);
 
 // Alien map and positional arrays
 global.alien_map = ds_map_create();

@@ -121,7 +121,7 @@ if global.event_ticker > 60 {
 		if ticket == winner {
 			audio_play_sound(snd_meteoric_impact, 10, 0);
 			// Impact is hardened with difficult
-			global.ship_hull -= (400 + global.level);
+			global.ship_hull -= 400;
 			global.camera_shake = 15;
 		}
 	}

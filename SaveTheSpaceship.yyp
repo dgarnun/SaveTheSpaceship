@@ -210,6 +210,25 @@
             }
         },
         {
+            "Key": "211adde8-e165-472d-b325-421f940e4592",
+            "Value": {
+                "id": "641c3ae0-f47f-405b-8201-b12842a92e29",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_selected_robot_marker\/obj_selected_robot_marker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "253daae3-466b-426f-97c7-b7d38d7d67c3",
             "Value": {
                 "id": "b1a5a96b-8ead-40ec-87d4-e196c2718b86",
@@ -1670,6 +1689,25 @@
                 ],
                 "resourcePath": "views\/be96e63a-ab7f-4096-9601-bf36ab3137fc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c21643f1-c871-4607-8fe1-5faacbeb1a1f",
+            "Value": {
+                "id": "0a50f3f9-2c9e-40ab-9c0e-085f2a4134a4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/selected_robot_marker\/selected_robot_marker.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
