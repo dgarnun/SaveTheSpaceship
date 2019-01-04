@@ -150,6 +150,7 @@ if global.event_ticker > 60 {
 		var fire_offset = 24;
 		var new_x = noone;
 		var new_y = noone;
+		
 		switch ticket {
 			case 0:
 				if place_free(active_fire.x + fire_offset, active_fire.y + fire_offset) {
@@ -159,14 +160,14 @@ if global.event_ticker > 60 {
 				break;
 				
 			case 1:
-				if place_free(active_fire.x + fire_offset, active_fire.y + fire_offset) {
+				if place_free(active_fire.x - fire_offset, active_fire.y + fire_offset) {
 					new_x = active_fire.x - fire_offset;
 					new_y = active_fire.y + fire_offset;
 				}
 				break;
 				
 			case 2:
-				if place_free(active_fire.x + fire_offset, active_fire.y + fire_offset) {
+				if place_free(active_fire.x + fire_offset, active_fire.y - fire_offset) {
 					new_x = active_fire.x + fire_offset;
 					new_y = active_fire.y - fire_offset;
 				}			

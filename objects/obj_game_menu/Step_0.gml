@@ -2,7 +2,7 @@ if game_init
 	button[0] = "continue";
 
 if pause {
-	menu_move = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
+	menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	menu_index += menu_move;
 
 	if (menu_index < 0) menu_index = buttons - 1;
@@ -12,11 +12,11 @@ if pause {
 }
 
 if instructions {
-	if keyboard_check_pressed(ord("A")) {
+	if keyboard_check_pressed(vk_left) {
 		instruction_page -= 1;
 	}
 	
-	if keyboard_check_pressed(ord("D")) {
+	if keyboard_check_pressed(vk_right) {
 		instruction_page += 1;
 	}
 	

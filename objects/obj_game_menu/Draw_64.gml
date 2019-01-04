@@ -24,7 +24,7 @@ if pause {
 			
 			// Mini help
 			draw_set_color(c_ltgray);
-			draw_text_transformed(1080, 720, "(WASD + Enter)", 0.7, 0.7, 0);
+			draw_text_transformed(1080, 720, "(Cursor + Enter)", 0.7, 0.7, 0);
 			
 			// Version
 			draw_text_transformed(1196, 10, "v." + string(round(GM_build_date)), 0.7, 0.7, 0);
@@ -106,7 +106,7 @@ if pause {
 
 		} // End switch
 		draw_set_color(c_ltgray);
-		draw_text(20, 720, "Press (ESC) for main menu. (A) previous page, (D) next page.");
+		draw_text(20, 720, "Press (ESC) for main menu. (left) previous page, (right) next page.");
 		var paginator = "Page: " + string(instruction_page+1) + " / " + string(max_instruction_pages);
 		draw_text(1080, 720, paginator);
 	}

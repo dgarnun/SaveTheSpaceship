@@ -1,1 +1,0 @@
-marker_path = path_add();
