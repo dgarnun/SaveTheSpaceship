@@ -81,7 +81,10 @@ camera_set_view_size(cam, view_wview, view_hview);
 // Send a target to the selected robot
 if (mouse_check_button(mb_left)) {
 	if (global.selected_robot) {
-		audio_play_sound(snd_robot_affirmative, 1, false);
+		if not audio_is_playing(snd_robot_affirmative) {
+			audio_play_sound(snd_robot_affirmative, 1, false);
+		}
+		
 		var instance = global.selected_robot;
 		with ((instance)) {
 			x_target = mouse_x;
@@ -221,6 +224,10 @@ if global.ship_distance_to_earth <= 0 {
 	global.hal = instance_create_layer(1180, 780, global.robot_instances_layer, obj_robot_hal);
 	global.arnold = instance_create_layer(1100, 860, global.robot_instances_layer, obj_robot_arnold);
 	global.data = instance_create_layer(1180, 860, global.robot_instances_layer, obj_robot_data);
+	
+	// Reset marker
+	instance_destroy(obj_selected_robot_marker);
+	global.robot_marker = instance_create_layer(-100, -100, layer_get_id("control"), obj_selected_robot_marker);
 	
 	// Destroy aliens and clear their map
 	global.number_of_concurrent_aliens = 0;
