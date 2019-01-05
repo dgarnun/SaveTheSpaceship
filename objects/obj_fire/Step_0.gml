@@ -7,6 +7,6 @@ if robot_id {
 	score += global.score_for_fire_extintion;
 	robot_id.robot_integrity -= 10;
 	ds_list_delete(global.fire_list, ds_list_find_index(global.fire_list, self));
-	var part = instance_create_layer(x, y, layer_get_id("control"), obj_paticle_smoke);
+	instance_create_layer(x, y, layer_get_id("control"), obj_particle_smoke);
 	instance_destroy(self);
 }

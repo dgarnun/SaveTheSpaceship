@@ -12,6 +12,9 @@ if robot_id {
 	robot_id.robot_integrity -= 10;
 	global.number_of_concurrent_aliens -= 1;
 	ds_map_delete(global.alien_map, id);
+	
+	instance_create_layer(x, y, layer_get_id("control"), obj_particle_alien);
+	
 	audio_play_sound(snd_alien_captured, 10, false);
 	instance_destroy(self);
 }

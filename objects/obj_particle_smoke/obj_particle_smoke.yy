@@ -2,7 +2,7 @@
     "id": "1fc71e3e-f09f-4578-8675-0f87acbfc1e2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_paticle_smoke",
+    "name": "obj_particle_smoke",
     "eventList": [
         {
             "id": "f20ecf4a-2fd0-4c5c-92d0-4d663fea9c56",

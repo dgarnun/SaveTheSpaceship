@@ -224,7 +224,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/obj_paticle_smoke\/obj_paticle_smoke.yy",
+                "resourcePath": "objects\/obj_particle_smoke\/obj_particle_smoke.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -605,6 +605,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/obj_robot_arnold\/obj_robot_arnold.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "462842ea-2bea-4cb2-97c5-4ddf759d41d9",
+            "Value": {
+                "id": "4e0e17c1-79ee-4b3d-bf8a-89e00c4d148d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_particle_alien\/obj_particle_alien.yy",
                 "resourceType": "GMObject"
             }
         },
