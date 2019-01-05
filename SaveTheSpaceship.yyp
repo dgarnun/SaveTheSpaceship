@@ -210,6 +210,25 @@
             }
         },
         {
+            "Key": "1fc71e3e-f09f-4578-8675-0f87acbfc1e2",
+            "Value": {
+                "id": "206a205a-b5dc-48a6-8628-142c8fbd24db",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_paticle_smoke\/obj_paticle_smoke.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "211adde8-e165-472d-b325-421f940e4592",
             "Value": {
                 "id": "641c3ae0-f47f-405b-8201-b12842a92e29",
@@ -970,6 +989,25 @@
             }
         },
         {
+            "Key": "7b376f4c-aba0-4641-8d40-c3a1b348c12d",
+            "Value": {
+                "id": "7c7c9be6-5cab-4eb2-8539-89d4e998171e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/7b376f4c-aba0-4641-8d40-c3a1b348c12d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7d80b0e9-b936-4c88-a638-1264d0ee48b5",
             "Value": {
                 "id": "6e255a39-b89d-45d3-bb98-ff203d330422",
@@ -1480,6 +1518,25 @@
                 ],
                 "resourcePath": "scripts\/pause_in_game\/pause_in_game.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2421b0e-395f-43cb-a352-7ab26289f374",
+            "Value": {
+                "id": "d34b601a-6792-41b1-97f9-c5775a90951e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_smoke\/spr_smoke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

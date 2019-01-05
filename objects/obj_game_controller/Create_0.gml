@@ -1,3 +1,6 @@
+// Particle system
+global.part_system = part_system_create();
+
 // Scores
 global.score_for_hull_repair = 10;
 global.score_for_finish_level = 500;

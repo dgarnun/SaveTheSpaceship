@@ -240,6 +240,7 @@ if global.ship_distance_to_earth <= 0 {
 	
 	// Music again...
 	audio_play_sound(snd_background_music, 1, true);
+
 }
 
 // Game over
