@@ -32,7 +32,7 @@ if (robot_battery == 0 || robot_integrity == 0) && !has_been_shutdown {
 }
 
 // Reinitiate robot if battery has been recharged
-if robot_battery >= 25 && has_been_shutdown {
+if robot_battery >= 25 && robot_integrity > 0 && has_been_shutdown {
 	audio_play_sound(snd_robot_reinitialization, 10, false);
 	has_been_shutdown = false;
 	robot_speed = fixed_robot_speed;

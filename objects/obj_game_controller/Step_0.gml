@@ -123,8 +123,7 @@ if global.event_ticker > 60 {
 
 		if ticket == winner {
 			audio_play_sound(snd_meteoric_impact, 10, 0);
-			// Impact is hardened with difficult
-			global.ship_hull -= 400;
+			global.ship_hull -= 350;
 			global.camera_shake = 15;
 		}
 	}
@@ -139,7 +138,7 @@ if global.event_ticker > 60 {
 		
 		if (ticket == winner and (ds_list_size(global.fire_list) < global.level)) {
 			// Spawn an fire event 
-			var fire = instance_create_layer(fire_array[spawn_cell, 0], fire_array[spawn_cell, 1], layer_get_id("control"), obj_fire);
+			var fire = instance_create_layer(fire_array[spawn_cell, 0], fire_array[spawn_cell, 1], layer_get_id("aliens"), obj_fire);
 			audio_play_sound(snd_fire_alarm, 10, false);
 			ds_list_add(global.fire_list, fire);
 			continue;
@@ -150,34 +149,34 @@ if global.event_ticker > 60 {
 	for (var i = 0; i < ds_list_size(global.fire_list) ; i++) {
 		var active_fire = ds_list_find_value(global.fire_list, i);
 		var ticket = irandom_range(0, 3);
-		var fire_offset = 24;
+		var fire_offset = 20;
 		var new_x = noone;
 		var new_y = noone;
 		
 		switch ticket {
 			case 0:
-				if place_free(active_fire.x + fire_offset, active_fire.y + fire_offset) {
+				if place_free(active_fire.x + fire_offset + 16, active_fire.y + fire_offset + 16) {
 					new_x = active_fire.x + fire_offset;
 					new_y = active_fire.y + fire_offset;
 				}			
 				break;
 				
 			case 1:
-				if place_free(active_fire.x - fire_offset, active_fire.y + fire_offset) {
+				if place_free(active_fire.x - fire_offset - 16, active_fire.y + fire_offset + 16) {
 					new_x = active_fire.x - fire_offset;
 					new_y = active_fire.y + fire_offset;
 				}
 				break;
 				
 			case 2:
-				if place_free(active_fire.x + fire_offset, active_fire.y - fire_offset) {
+				if place_free(active_fire.x + fire_offset + 16, active_fire.y - fire_offset - 16) {
 					new_x = active_fire.x + fire_offset;
 					new_y = active_fire.y - fire_offset;
 				}			
 				break;
 
 			case 4:
-				if place_free(active_fire.x - fire_offset, active_fire.y - fire_offset) {
+				if place_free(active_fire.x - fire_offset - 16, active_fire.y - fire_offset - 16) {
 					new_x = active_fire.x - fire_offset;
 					new_y = active_fire.y - fire_offset;
 				}			
@@ -185,7 +184,7 @@ if global.event_ticker > 60 {
 		}
 		
 		if new_x and new_y {
-			var new_fire_extension = instance_create_layer(new_x, new_y, layer_get_id("control"), obj_fire);
+			var new_fire_extension = instance_create_layer(new_x, new_y, layer_get_id("aliens"), obj_fire);
 			ds_list_add(temp_list, new_fire_extension);
 		}
 	}
@@ -240,7 +239,6 @@ if global.ship_distance_to_earth <= 0 {
 	
 	// Music again...
 	audio_play_sound(snd_background_music, 1, true);
-
 }
 
 // Game over
